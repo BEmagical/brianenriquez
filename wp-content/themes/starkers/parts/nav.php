@@ -1,7 +1,6 @@
 <nav class="narrow">
 	<a class="switch"><i class="icon-plus"></i> <span>Minimize</span></a>
 	<a class="blog" href="/"><i class="icon-book"></i> Blog</a>
-	<a class="discover"><i class="icon-globe"></i> Coming soon ...</a>
 	
 	<div class="clearfix"></div>
 	<div class="about-me">
