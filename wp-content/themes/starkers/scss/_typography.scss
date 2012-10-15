@@ -1,0 +1,175 @@
+body {
+	font-size: 16px;
+	line-height: 20px;
+	color: $darkGrey;
+	
+	@include breakpoint(baby-bear) { 
+		font-size: 14px;
+		line-height: 16px;
+	}
+}
+
+.header {
+	h1 { 
+		color: $darkerGrey;
+		margin-bottom: 5px; 
+	}
+	p {
+		margin: 5px 0;
+	}
+	h2 {display: inline-block;}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-family: $brand-serif;
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 20px;
+}
+h2 {
+	font-family: $brand-serif;
+	font-size: 36px;
+	line-height: 36px;
+	font-weight: 600;
+	margin-bottom: 20px;
+	
+	@include breakpoint(baby-bear) { 
+		font-size: 28px;
+		line-height: 28px;
+	}
+}
+
+h3 {
+	font-family: $brand-sans;
+	font-size: 16px;
+	line-height: 16px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	color: $brand-color;
+	margin: 30px 0 10px 0;
+}
+p {
+	font-family: $brand-sans;
+	line-height: 22px;
+}
+.footer p {
+	font-size: 12px;
+	color: $lightGrey;
+}
+article {
+	margin-bottom: 60px;
+	
+	h2 {
+		font-family: $brand-serif;
+		font-weight: 600;
+		color: $brand-color; 
+		
+		&:hover {
+			color: $brand-colorDark;
+		}
+	}
+	p:first-of-type {
+		font-family: $brand-serif;
+		font-size: 20px;
+		line-height: 24px;
+		color: $darkerGrey;
+		
+		@include breakpoint(baby-bear) { 
+			font-size: 18px;
+			line-height: 22px;
+		}
+	}
+	h2 a:hover {border: 0;}
+	
+	& strong {
+		color: $darkerGrey;
+	}
+	
+	& .post-meta {
+		font-family: $brand-serif;
+		font-size: 20px;
+		line-height: 24px;
+		border-top: 1px dotted $lighterGrey;
+		padding: 20px 0 10px 0;
+		
+		@include breakpoint(baby-bear) { 
+			padding: 10px 0;
+		}
+	}
+	& .post-meta span {
+		margin-right: 20px;
+		
+		@include breakpoint(baby-bear) { 
+			display: block;
+		}
+	}
+	& .post-meta span.tags a {
+		margin-right: 10px;
+	}
+	& p.wp-caption-text {
+		color: $darkGrey;
+		font-family: $brand-sans;
+		font-size: 12px;
+		line-height: 14px;
+		margin: 5px 0 10px 0;
+		border-bottom: 1px dotted $lightGrey;
+		padding: 0 10px 10px 35px;
+		position: relative;
+		
+		&:before {
+			content: '\f083';
+			position: absolute;
+			font-family: FontAwesome;
+			color: $brand-colorDark;
+			font-size: 26px;
+			top: 8px;
+			left: 0;
+		}
+		
+		> .lead {
+			color: $brand-color;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+	}
+	
+	> ul, ol {
+		margin-left: 40px;
+	}
+	> ul li, ol li {
+		list-style-type: disc;
+		line-height: 22px;
+		margin: 20px 0;
+		
+		& .title {
+			display: block;
+		}
+	}
+	> ol li {
+		list-style-type: decimal;
+	}
+	> blockquote {
+		position: relative;
+		float: right;
+		margin-right: -40px;
+		width: 50%;
+		padding: 10px 10px 20px 10px;
+		border-bottom: 1px dotted $lightGrey;
+		color: $darkestGrey;
+		
+		@include breakpoint(mama-bear) {
+			width: 100%;
+			margin: 0;
+			float: none;
+		}
+		
+		& p {
+			margin: 0;
+		}	
+	}
+}

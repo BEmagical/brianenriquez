@@ -1,0 +1,204 @@
+/*!
+Theme Name: isotope
+Description: Portfolio and Blog redesign.
+Author: Brian Enriquez
+Author URI: http://brianenriquez.com/
+Version: 1.0
+Tags: minimal, blue, responsive, web app, typograhy
+*/
+
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+*/
+
+@import "compass/css3";
+@import "bits.scss";
+@import "normalize.scss";
+@import "typography.scss";
+@import "font-awesome.scss";
+@import "grids.scss";
+@import "isotope.scss";
+@import "pages.scss";
+@import "prism.scss";
+
+body {
+	background: #fff;
+	overflow-x: hidden;
+	font-family: $brand-sans;
+	
+	&.stats a.stats {@include nav-active;}
+	&.discover a.discover {@include nav-active;}
+	&.wiki a.wiki {@include nav-active;}
+	
+	&.category a.blog, 
+	&.archive a.blog,
+	&.single a.blog,
+	&.home a.blog {@include nav-active;}
+	
+	@include breakpoint(baby-bear) { 
+		width: 100%;
+		margin-bottom: 20px;
+		padding: 0;
+		
+		@media only screen and (-webkit-min-device-pixel-ratio: 2) {
+			max-width: 320px;			
+		}
+	}
+}
+
+nav {
+	display: table-cell;
+	position: fixed;
+	z-index: 20;
+	top: 0;
+	left: 0;
+	width: 240px;
+	height: 100%;
+	background-color: $brand-color;
+	overflow: hidden;
+	border-right: 1px solid $brand-colorDark;
+	box-shadow: 2px 0px 5px rgba(0,0,0,0.3);
+	-webkit-transition: $transition-switch;
+	
+	@include breakpoint(baby-bear) { 
+		width: 200px;
+	}
+	
+	&.narrow {
+		width: 65px;
+		box-shadow: none;
+		
+		& .about-me {display: none;}
+	}
+	
+	h1 {
+		padding: 0 15px;
+	}
+	
+	a {
+		float: left;
+		width: 240px;
+		overflow: hidden;
+		color: $lightestGrey;
+		font-weight: bold;
+		font-size: 18px;
+		padding: 15px;
+		
+		-webkit-transition: $transition-fast;
+		
+		@include breakpoint(baby-bear) {
+			width: 200px;
+		}
+	}
+	a i {
+		font-size: 32px;
+		width: 32px;
+		top: -3px;
+		position: relative;
+		line-height: 0;
+		margin-right: 13px;
+		color: $brand-colorDark;
+		
+		-webkit-transition: $transition-fast;
+	}
+	a:hover, a.active {
+		background-color: $brand-colorDark;
+		color: #fff;
+		
+		i {color: #fff;}
+	}
+	.icon-plus {-webkit-transition: $transition-fast;}
+	.icon-plus.switch {
+		-webkit-transform: rotate(45deg);
+		position: relative;
+		left: 2px;
+	}
+	
+	& .about-me {
+		position: absolute;
+		bottom: 20px;
+		color: $lightestGrey;
+		padding: 0 20px;
+		font-size: 12px;
+		width: 240px;
+		
+		& a {
+			padding: 0;
+			float: none;
+			font-size: 12px;
+			border-bottom: 1px dotted;
+			font-weight: normal;
+		}
+		
+		@include breakpoint(baby-bear) {
+			width: 200px;
+			bottom: 5px;
+		}
+		
+		> p {
+			padding: 10px 0;
+			margin: 0;	
+			line-height: 14px;	
+			
+			strong {
+				font-weight: bold;
+				text-transform: uppercase;
+				color: #fff;
+			}
+		}
+	}
+	
+}
+
+.tinynav { 
+	display: none;
+	outline: none;
+	
+	@include breakpoint(baby-bear) {
+    	display: block;
+    	width: 100%;
+    	margin: 10px 0 20px 0;
+    }
+}
+
+.tag-list, #filters {
+	@include breakpoint(baby-bear) {
+	    display: none;
+	}
+}    
+
+.wrapper {
+	display: table;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+
+.page-wrap {
+	padding: 40px 40px 40px 110px;
+	position: relative;
+	-webkit-transition: $transition-switch;
+	
+	@include breakpoint(baby-bear) { 
+		padding: 20px 20px 20px 90px;
+	}
+		
+	&.expanded {
+		padding-left: 280px;
+		
+		@include breakpoint(baby-bear) { 
+			padding-left: 90px;
+		}
+	}
+}
+
+.sidebar {
+	position: relative;
+	left: 40px;
+}
+
+.footer {
+	position: relative;
+	border-top: 1px solid $lightestGrey;
+	margin-top: 20px;
+}

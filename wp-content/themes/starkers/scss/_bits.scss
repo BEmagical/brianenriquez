@@ -1,0 +1,124 @@
+.wf-loading {
+	visibility: hidden;
+}
+
+// ------------------------------------------------------ COLOR PALETTE
+
+$brand-serif: "chaparral pro";
+$brand-sans: "proxima-nova";
+
+$lightestGrey: #efefef;
+$lighterGrey: #dadada;
+$lightGrey: #aeaeae;
+
+$darkGrey: #696969;
+$darkerGrey: #494c4c;
+$darkestGrey: #272727;
+
+$blue: #0088cc;
+$orange: #E53B2C; 
+$pink: #c700ff;
+
+$brand-color: $blue;
+$brand-colorDark: darken($blue, 10%);  
+$brand-colorLight: lighten($blue, 10%);  
+
+// ------------------------------------------------------ BREAST CANCER AWARENESS MONTH
+
+$brand-color: $pink;
+$brand-colorDark: darken($pink, 10%);  
+$brand-colorLight: lighten($pink, 10%);  
+
+// ------------------------------------------------------ MEDIA QUERIES
+
+@mixin breakpoint($point) {
+  @if $point == papa-bear {
+    @media (max-width: 1600px) { @content; }
+  }
+  @if $point == mama-bear {
+    @media (max-width: 900px) { @content; }
+  }
+  @else if $point == baby-bear {
+    @media (max-width: 700px)  { @content; }
+  }
+}
+
+.hidden-mobile {
+	@include breakpoint(baby-bear) {display: none;}
+}
+
+// ------------------------------------------------------ NAVIGATION
+
+@mixin nav-active {
+	background: $brand-colorDark;
+	color: #fff;
+	
+	i {color: #fff;}
+}
+
+
+// ------------------------------------------------------ SHAPES
+
+$radius: 3px;
+$pagePadding: 40px;
+$modulePadding: 20px;
+$noPadding: 0 40px;
+.no-bull {list-style-type: none;}
+
+$shadow-module: 0 3px 3px rgba(0,0,0,0.2);
+
+.clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+* {
+	@include box-sizing(border-box);
+}
+
+
+// ------------------------------------------------------ TRANSITIONS
+
+$transition-switch: all 200ms linear;
+$transition: all 200ms linear;
+$transition-fast: all 100ms linear;
+
+
+// ------------------------------------------------------ HELPER CLASSES
+
+.fr {float: right;}
+.fl {float: left;}
+
+.row [class*="span"]:first-child {margin-left: 0;}
+
+$line-height-nav: 22px;
+
+
+// ------------------------------------------------------ BUTTONS
+
+.btn, input[type=submit], button {
+	background-color: $brand-color;
+	border: 0;
+	border-color: $blue;
+	padding: 12px 15px !important;
+	line-height: 14px !important;
+	color: #fff !important;
+	width: auto;
+	
+	&:hover {
+		background-color: $brand-colorLight;
+	}
+}
+form#commentform input[type=submit] {
+	width: auto;
+	border-color: $brand-color;
+	
+	&:hover {border-color: $brand-color;}
+} 
