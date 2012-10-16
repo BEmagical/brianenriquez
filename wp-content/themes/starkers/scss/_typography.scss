@@ -2,6 +2,7 @@ body {
 	font-size: 16px;
 	line-height: 20px;
 	color: $darkGrey;
+	font-weight: 400;
 	
 	@include breakpoint(baby-bear) { 
 		font-size: 14px;
@@ -34,12 +35,12 @@ h2 {
 	font-family: $brand-serif;
 	font-size: 36px;
 	line-height: 36px;
-	font-weight: 600;
+	font-weight: 700;
 	margin-bottom: 20px;
 	
 	@include breakpoint(baby-bear) { 
-		font-size: 28px;
-		line-height: 28px;
+		font-size: 24px;
+		line-height: 22px;
 	}
 }
 
@@ -64,19 +65,21 @@ p {
 article {
 	margin-bottom: 60px;
 	
-	h2 {
+	h2, h2 a {
 		font-family: $brand-serif;
-		font-weight: 600;
-		color: $brand-color; 
+		font-weight: 800;
+		color: $brand-colorDark; 
 		
-		&:hover {
-			color: $brand-colorDark;
+		&:hover { color: $brand-color; }
+		
+		@include breakpoint(baby-bear) { 
+			font-weight: normal;
 		}
 	}
 	p:first-of-type {
 		font-family: $brand-serif;
 		font-size: 20px;
-		font-weight: 400px;
+		font-weight: normal;
 		line-height: 24px;
 		color: $darkerGrey;
 		

@@ -43,30 +43,6 @@
 	}
 }
 
-ul#filters {
-	padding: 0;
-	margin: 10px 0;
-	
-	& li {
-		list-style-type: none;
-	}
-	
-	& a {
-		color: $darkGrey;
-		font-weight: normal;
-		padding: 5px 0;
-		display: inline-block;
-	}
-	
-	& a:hover {
-		color: $darkGrey;
-	}
-	
-	& a.selected {
-		color: $blue;
-	}
-}
-
 /**** Isotope Filtering ****/
 
 .isotope-item {

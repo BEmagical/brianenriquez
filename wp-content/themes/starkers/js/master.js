@@ -11,7 +11,6 @@ $(document).ready(function() {
 		return false;
 	});
 	
-	$('ul.tag-list').tinyNav();
-	$('#filters').tinyNav();
+	$('.page-nav ul').tinyNav();
      
 });

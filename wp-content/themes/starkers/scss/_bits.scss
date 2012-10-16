@@ -38,6 +38,9 @@ $brand-colorLight: lighten($pink, 10%);
   @if $point == mama-bear {
     @media (max-width: 900px) { @content; }
   }
+  @if $point == iphone-bear {
+    @media (max-width: 320px) { @content; }
+  }
   @else if $point == baby-bear {
     @media (max-width: 700px)  { @content; }
   }

@@ -40,7 +40,17 @@ body {
 		margin-bottom: 20px;
 		padding: 0;
 	}
+	
+	@include breakpoint(iphone-bear) { 
+		width: 320px;
+		max-width: 320px;
+		overflow: hidden;
+		margin-bottom: 20px;
+		padding: 0;
+	}
 }
+
+
 
 nav {
 	display: table-cell;
@@ -157,7 +167,7 @@ nav {
     }
 }
 
-.tag-list, #filters {
+.page-nav ul {
 	@include breakpoint(baby-bear) {
 	    display: none;
 	}
@@ -175,7 +185,7 @@ nav {
 	-webkit-transition: $transition-switch;
 	
 	@include breakpoint(baby-bear) { 
-		padding: 20px 20px 20px 90px;
+		padding: 10px 10px 10px 80px;
 	}
 		
 	&.expanded {
