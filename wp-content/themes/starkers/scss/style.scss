@@ -209,7 +209,8 @@ nav {
 	}
 	
 	@include breakpoint(iphone-bear) {
-		max-width: 310px;
+		max-width: 290px;
+		padding-right: 0;
 	}
 		
 	&.expanded {
