@@ -33,6 +33,7 @@ code[class*="language-"],
 pre[class*="language-"] {
 	color: $lighterGrey;
 	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	font-size: 14px;
 	direction: ltr;
 	text-align: left;
 	white-space: pre;
@@ -48,6 +49,10 @@ pre[class*="language-"] {
 	-moz-hyphens: none;
 	-ms-hyphens: none;
 	hyphens: none;
+	
+	@include breakpoint(baby-bear) {
+		font-size: 11px;
+	}
 }
 
 /* Code blocks */

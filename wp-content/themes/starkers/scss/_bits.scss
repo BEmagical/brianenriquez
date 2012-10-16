@@ -59,7 +59,6 @@ $brand-colorLight: lighten($pink, 10%);
 	i {color: #fff;}
 }
 
-
 // ------------------------------------------------------ SHAPES
 
 $radius: 3px;
@@ -102,6 +101,8 @@ $transition-fast: all 100ms linear;
 .row [class*="span"]:first-child {margin-left: 0;}
 
 $line-height-nav: 22px;
+$line-height-papa-bear: 22px;
+$line-height-baby-bear: 18px;
 
 
 // ------------------------------------------------------ BUTTONS
@@ -124,4 +125,9 @@ form#commentform input[type=submit] {
 	border-color: $brand-color;
 	
 	&:hover {border-color: $brand-color;}
+	
+	@include breakpoint(baby-bear) {
+		width: 100%;
+		margin-top: 10px;
+	}
 } 

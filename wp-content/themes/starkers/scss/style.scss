@@ -44,7 +44,7 @@ body {
 	@include breakpoint(iphone-bear) { 
 		width: 320px;
 		max-width: 320px;
-		overflow: hidden;
+		overflow-x: hidden;
 		margin-bottom: 20px;
 		padding: 0;
 	}
@@ -63,7 +63,7 @@ nav {
 	background-color: $brand-color;
 	overflow: hidden;
 	border-right: 1px solid $brand-colorDark;
-	box-shadow: 2px 0px 5px rgba(0,0,0,0.3);
+	box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
 	-webkit-transition: $transition-switch;
 	
 	@include breakpoint(baby-bear) { 
@@ -73,6 +73,10 @@ nav {
 	&.narrow {
 		width: 65px;
 		box-shadow: none;
+		
+		@include breakpoint(baby-bear) {
+			width: 30px;
+		}
 		
 		& .about-me {display: none;}
 	}
@@ -94,6 +98,13 @@ nav {
 		
 		@include breakpoint(baby-bear) {
 			width: 200px;
+			padding: 8px 10px 8px 5px;
+			font-family: $brand-sans;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 2px;
 		}
 	}
 	a i {
@@ -106,6 +117,12 @@ nav {
 		color: $brand-colorDark;
 		
 		-webkit-transition: $transition-fast;
+		
+		@include breakpoint(baby-bear) {
+			font-size: 18px;
+			width: 18px;
+			margin-right: 5px;
+		}
 	}
 	a:hover, a.active {
 		background-color: $brand-colorDark;
@@ -132,8 +149,11 @@ nav {
 			padding: 0;
 			float: none;
 			font-size: 12px;
+			line-height: normal;
 			border-bottom: 1px dotted;
 			font-weight: normal;
+			letter-spacing: 0;
+			text-transform: none;
 		}
 		
 		@include breakpoint(baby-bear) {
@@ -185,14 +205,18 @@ nav {
 	-webkit-transition: $transition-switch;
 	
 	@include breakpoint(baby-bear) { 
-		padding: 10px 10px 10px 80px;
+		padding: 10px 20px 10px 45px;
+	}
+	
+	@include breakpoint(iphone-bear) {
+		max-width: 290px;
 	}
 		
 	&.expanded {
 		padding-left: 280px;
 		
 		@include breakpoint(baby-bear) { 
-			padding-left: 90px;
+			padding-left: 45px;
 		}
 	}
 }

@@ -39,8 +39,8 @@ h2 {
 	margin-bottom: 20px;
 	
 	@include breakpoint(baby-bear) { 
-		font-size: 24px;
-		line-height: 22px;
+		font-size: 28px;
+		line-height: 26px;
 	}
 }
 
@@ -56,7 +56,11 @@ h3 {
 }
 p {
 	font-family: $brand-sans;
-	line-height: 22px;
+	line-height: $line-height-papa-bear;
+	
+	@include breakpoint(baby-bear) {
+		line-height: $line-height-baby-bear;
+	}
 }
 .footer p {
 	font-size: 12px;
@@ -71,10 +75,6 @@ article {
 		color: $brand-colorDark; 
 		
 		&:hover { color: $brand-color; }
-		
-		@include breakpoint(baby-bear) { 
-			font-weight: normal;
-		}
 	}
 	p:first-of-type {
 		font-family: $brand-serif;
@@ -144,11 +144,20 @@ article {
 	
 	> ul, ol {
 		margin-left: 40px;
+		
+		@include breakpoint(baby-bear) {
+			margin-left: 20px;
+		}
 	}
 	> ul li, ol li {
 		list-style-type: disc;
-		line-height: 22px;
+		line-height: $line-height-papa-bear;
 		margin: 20px 0;
+		
+		@include breakpoint(baby-bear) {
+			line-height: $line-height-baby-bear;
+			margin: 10px 0;
+		}
 		
 		& .title {
 			display: block;
