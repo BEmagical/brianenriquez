@@ -193,15 +193,9 @@ article {
 		}	
 	}
 	& a .read-more {
-		display: inline-block;
+		display: block;
 		margin: 10px 0;
 		
-		&:before {
-			content: '';
-			display: table;
-			position: absolute;
-			clear: both;
-		}
 		&:hover {
 			background-color: $brand-colorDark;
 		}
