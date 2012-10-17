@@ -88,6 +88,10 @@ article {
 			line-height: 22px;
 		}
 	}
+	> p a:hover {
+		background-color: $brand-colorDark;
+		color: #fff;
+	}
 	h2 a:hover {border: 0;}
 	
 	& strong {
@@ -188,8 +192,18 @@ article {
 			margin: 0;
 		}	
 	}
-	& .read-more {
-		display: block;
-		padding: 10px 0;
+	& a .read-more {
+		display: inline-block;
+		margin: 10px 0;
+		
+		&:before {
+			content: '';
+			display: table;
+			position: absolute;
+			clear: both;
+		}
+		&:hover {
+			background-color: $brand-colorDark;
+		}
 	}
 }
