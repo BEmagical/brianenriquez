@@ -112,6 +112,9 @@ article {
 			display: block;
 		}
 	}
+	& .post-meta i {
+		color: $brand-colorDark;
+	}
 	& .post-meta span.tags a {
 		margin-right: 10px;
 	}
@@ -184,5 +187,9 @@ article {
 		& p {
 			margin: 0;
 		}	
+	}
+	& .read-more {
+		display: block;
+		padding: 10px 0;
 	}
 }

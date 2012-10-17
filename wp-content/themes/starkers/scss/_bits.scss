@@ -17,7 +17,7 @@ $darkestGrey: #272727;
 
 $blue: #0088cc;
 $orange: #E53B2C; 
-$pink: #c700ff;
+$pink: #e84c8f;
 
 $brand-color: $blue;
 $brand-colorDark: darken($blue, 10%);  
@@ -26,8 +26,17 @@ $brand-colorLight: lighten($blue, 10%);
 // ------------------------------------------------------ BREAST CANCER AWARENESS MONTH
 
 $brand-color: $pink;
-$brand-colorDark: darken($pink, 10%);  
-$brand-colorLight: lighten($pink, 10%);  
+$brand-colorDark: darken($pink, 15%);  
+$brand-colorLight: lighten($pink, 10%); 
+
+.komen {
+	background-image: url('../starkers/img/logos/logo-komen.jpg');
+	width: 90px;
+	height: 101px;
+	position: fixed;
+	bottom: 10px;
+	right: 10px;
+}
 
 // ------------------------------------------------------ MEDIA QUERIES
 
@@ -110,11 +119,13 @@ $line-height-baby-bear: 18px;
 .btn, input[type=submit], button {
 	background-color: $brand-color;
 	border: 0;
-	border-color: $blue;
+	border: 1px solid $brand-colorDark;
 	padding: 12px 15px !important;
 	line-height: 14px !important;
 	color: #fff !important;
 	width: auto;
+	
+	-webkit-transition: $transition-fast;
 	
 	&:hover {
 		background-color: $brand-colorLight;

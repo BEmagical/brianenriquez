@@ -53,7 +53,6 @@ body {
 
 
 nav {
-	display: table-cell;
 	position: fixed;
 	z-index: 20;
 	top: 0;
@@ -224,6 +223,10 @@ nav {
 .sidebar {
 	position: relative;
 	left: 40px;
+	
+	@include breakpoint(baby-bear) {
+		display: none;
+	}
 }
 
 .footer {

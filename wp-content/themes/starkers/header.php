@@ -35,3 +35,4 @@
 
 <div class="wrapper">
 	<?php include('parts/nav.php')?>
+	<div class="komen"></div>

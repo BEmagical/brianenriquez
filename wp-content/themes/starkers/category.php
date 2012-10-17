@@ -52,7 +52,7 @@
 							<span><i class="icon-time"></i> <time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?></time></span>
 							<span><i class="icon-comments"></i> <?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?></span>
 						</div>
-						<?php the_content(); ?>						
+						<?php the_content('<span class="read-more">Read more &rarr;</span>'); ?>
 						<?php comments_template( '', true ); ?>
 					</article>
 				</li>
