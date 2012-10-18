@@ -74,7 +74,10 @@ article {
 		font-weight: 800;
 		color: $brand-colorDark; 
 		
-		&:hover { color: $brand-color; }
+		&:hover {
+			color: $brand-color;
+			background-color: transparent;
+		}
 	}
 	p:first-of-type {
 		font-family: $brand-serif;
@@ -168,6 +171,11 @@ article {
 		
 		& .title {
 			display: block;
+		}
+		
+		> a:hover {
+			color: #fff;
+			background-color: $brand-colorDark;
 		}
 	}
 	> ol li {
