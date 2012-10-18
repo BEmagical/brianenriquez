@@ -1,0 +1,228 @@
+//------------------------------------------------------- GLOBAL NAV
+
+nav {
+	position: fixed;
+	z-index: 20;
+	top: 0;
+	left: 0;
+	width: 240px;
+	height: 100%;
+	background-color: $brand-color;
+	overflow: hidden;
+	border-right: 1px solid $brand-colorDark;
+	box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
+	-webkit-transition: $transition-switch;
+	
+	@include breakpoint(baby-bear) { 
+		width: 200px;
+	}
+	
+	&.narrow {
+		width: 65px;
+		box-shadow: none;
+		
+		@include breakpoint(baby-bear) {
+			width: 30px;
+		}
+		
+		& .about-me {display: none;}
+	}
+	
+	h1 {
+		padding: 0 15px;
+	}
+	
+	a {
+		float: left;
+		width: 240px;
+		overflow: hidden;
+		color: $lightestGrey;
+		font-weight: bold;
+		font-size: 18px;
+		padding: 15px;
+		
+		-webkit-transition: $transition-fast;
+		
+		@include breakpoint(baby-bear) {
+			width: 200px;
+			padding: 8px 10px 8px 5px;
+			font-family: $brand-sans;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+	}
+	a i {
+		font-size: 32px;
+		width: 32px;
+		top: -3px;
+		position: relative;
+		line-height: 0;
+		margin-right: 13px;
+		color: $brand-colorDark;
+		
+		-webkit-transition: $transition-fast;
+		
+		@include breakpoint(baby-bear) {
+			font-size: 18px;
+			width: 18px;
+			margin-right: 5px;
+		}
+	}
+	a:hover, a.active {
+		background-color: $brand-colorDark;
+		color: #fff;
+		
+		i {color: #fff;}
+	}
+	.icon-plus {-webkit-transition: $transition-fast;}
+	.icon-plus.switch {
+		-webkit-transform: rotate(45deg);
+		position: relative;
+		left: 2px;
+	}
+	
+	& .about-me {
+		position: absolute;
+		bottom: 20px;
+		color: $lightestGrey;
+		padding: 0 20px;
+		font-size: 12px;
+		width: 240px;
+		
+		& a {
+			padding: 0;
+			float: none;
+			font-size: 12px;
+			line-height: normal;
+			border-bottom: 1px dotted;
+			font-weight: normal;
+			letter-spacing: 0;
+			text-transform: none;
+		}
+		
+		@include breakpoint(baby-bear) {
+			width: 200px;
+			bottom: 5px;
+		}
+		
+		> p {
+			padding: 10px 0;
+			margin: 0;	
+			line-height: 14px;	
+			
+			strong {
+				font-weight: bold;
+				text-transform: uppercase;
+				color: #fff;
+			}
+		}
+	}
+	
+}
+
+//------------------------------------------------------- PAGE NAV
+
+.page-nav.span3 {
+	position: relative;
+	border-bottom: 1px dotted #DADADA;
+	padding-bottom: 10px;
+	margin-right: 40px;
+	
+	@include breakpoint(baby-bear) { 
+		width: 100%;
+		margin-bottom: 20px;
+		padding: 0;
+		border-bottom: 1px solid $brand-color;
+		
+		& p {
+			font-size: 12px;
+			line-height: 14px;
+			margin: 0;
+		}
+	}
+
+	-webkit-transition: $transition-switch;
+	
+	& h2 {
+		font-weight: normal;
+		color: $brand-color;
+		font-weight: 400;
+		margin: 0;
+		
+		@include breakpoint(baby-bear) {
+			font-family: $brand-sans;
+			font-size: 16px;
+			line-height: 24px;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+	}
+	
+	& .icon-tags {
+		font-size: 28px;
+		
+		@include breakpoint(baby-bear) {
+			font-size: 18px;
+		}
+	}
+	
+	> ul li {
+		line-height: $line-height-nav;
+	}
+	> ul li a {
+		color: $lightGrey;
+		display: block;
+		position: relative;
+		
+		&:hover {
+			color: $brand-color;
+		}
+	} 
+	
+	& a.breadcrumb-back {
+		color: $lightGrey;
+		font-size: 16px;
+		font-weight: normal;
+		font-family: $brand-sans;
+		position: absolute;
+		top: -34px;
+		left: 0;
+		
+		@include breakpoint(baby-bear) {
+			position:relative;
+			top: 0;
+		}
+	}
+	
+	> ul li {
+		list-style-type: none;
+		
+		@include breakpoint(baby-bear) { 
+			float: left;
+			padding: 0 20px 10px 0;
+		}	
+	}
+}
+
+//------------------------------------------------------- TINY NAV
+
+.tinynav { 
+	display: none;
+	outline: none;
+	
+	@include breakpoint(baby-bear) {
+    	display: block;
+    	width: 100%;
+    	margin: 10px 0 20px 0;
+    }
+}
+
+.page-nav ul {
+	@include breakpoint(baby-bear) {
+	    display: none;
+	}
+}    

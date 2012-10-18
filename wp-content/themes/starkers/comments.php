@@ -21,7 +21,7 @@
 
 	<?php if ( have_comments() ) : ?>
 
-	<div class="section-title"><i class="icon-comments"></i> <?php comments_number(); ?></div>
+	<div class="section-title"><h3><?php comments_number(); ?></h3></div>
 
 	<ol>
 		<?php wp_list_comments( array( 'callback' => 'starkers_comment' ) ); ?>

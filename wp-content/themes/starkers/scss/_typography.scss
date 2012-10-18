@@ -52,7 +52,7 @@ h3 {
 	text-transform: uppercase;
 	letter-spacing: 2px;
 	color: $brand-color;
-	margin: 30px 0 10px 0;
+	margin: 20px 0 10px 0;
 }
 p {
 	font-family: $brand-sans;
@@ -102,11 +102,11 @@ article {
 	}
 	
 	& .post-meta {
-		font-family: $brand-serif;
-		font-size: 20px;
-		line-height: 24px;
+		font-family: $brand-sans;
+		font-size: 16px;
+		line-height: 20px;
 		border-top: 1px dotted $lighterGrey;
-		padding: 20px 0 10px 0;
+		padding: 20px 0 10px;
 		
 		@include breakpoint(baby-bear) { 
 			padding: 10px 0;

@@ -1,0 +1,162 @@
+/*------------------------------------------------------------- COMMENTS */
+
+#comments {
+	margin-top: 30px;
+	border-top: 1px dotted #dadada;
+	position: relative;
+
+	& img.avatar {
+		position: relative;
+		display: inline-block;
+		width: 50px;
+		height: 50px;
+		margin-right: 20px;
+		border-radius: 100px;
+		float: left;
+		
+		@include breakpoint(baby-bear) {
+			display: none;
+		}
+	}
+		
+	& article {
+		margin-bottom: 20px !important;
+		
+		& p:first-of-type {
+			font-family: $brand-sans;
+			font-size: 16px;
+			line-height: 18px;
+			color: $darkGrey;
+	
+		}
+	}	
+
+	& ol {
+		margin: 0;
+		padding: 0;
+	}
+	
+	& ol li {
+		border-bottom: 1px dotted #DADADA;
+		list-style-type: none;
+		
+		@include breakpoint(baby-bear) {
+			padding: 0 0 10px 0;
+			margin-bottom: 20px;
+		}
+		
+		> article {
+			@include breakpoint(baby-bear) {
+				margin-bottom: 10px;
+			}
+		}
+	}	
+	
+	h4, p, time {
+		display: block; 
+		padding-left: 70px;
+		
+		@include breakpoint(baby-bear) {
+			padding-left: 0;
+		}
+	}	
+	
+	h4 {color: $darkerGrey;}
+	
+	p {
+		@include breakpoint(baby-bear) {
+			margin: 5px 0;
+		}	
+	}
+}
+
+#comments .section-title,
+#respond .section-title {
+	display: block;
+	text-align: left;
+}
+
+form#commentform {
+	& p {
+		padding-left: 0;
+		position: relative;
+	}
+	label {
+		display: inline-block;
+		padding: 13px 15px;
+		border-right: 1px solid #DADADA;
+		z-index: 10;
+		position: absolute;
+		height: 46px;
+		top: 1px;
+		width: 100px;
+		text-align: right;
+		
+		@include breakpoint(baby-bear) {
+			display: block;
+			padding: 5px 0;
+			border: 0;
+			position: relative;
+			height: auto;
+			top: 0;
+			text-align: left;
+			
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+	}
+	input, textarea {
+		width: 100%;
+		border: 1px solid $lighterGrey;
+		padding: 12px 15px 12px 125px;
+		outline: 0;
+		resize: none;
+		color: $darkGrey;
+		font-size: 16px;
+		line-height: 22px;
+		-webkit-transition: $transition;
+		
+		position: relative;
+	
+		&:hover, &:focus {
+			border-color: $lightGrey;
+			border-bottom: 1px solid $darkGrey;
+			-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+		}	
+		
+		@include breakpoint(baby-bear) {
+			padding: 5px 7px;
+		}
+	}
+	span.required {
+		z-index: 1;
+		display: inline;
+		position: absolute;
+		top: 17px;
+		left: 110px;
+		font-size: 28px;
+		line-height: 28px;
+		
+		@include breakpoint(baby-bear) {
+			top: 6px;
+			left: 55px;
+		}
+	}
+	p.comment-notes {
+		font-family: $brand-sans;
+		font-size: 14px;
+		line-height: 18px;
+		margin: 0;
+		text-align: left;
+		
+		@include breakpoint(baby-bear) {
+			display: none;
+		}
+	}
+	p.comment-notes span.required {
+		position: relative;
+		top: 11px;
+		left: 0;
+	}
+}
