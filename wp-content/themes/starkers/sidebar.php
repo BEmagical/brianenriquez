@@ -1,3 +1,2 @@
-<div class="sidebar span3">
-
+<div class="sidebar span2">
 </div>

@@ -8,6 +8,14 @@
 
 <div class="page-wrap">
 	<div class="page-content row-fluid">
+		<div class="page-bg">
+			<div class="welcome span12">
+				<h3>Undress the Web</h3>
+				<p>A blog for web school dropouts</p>
+				<p>Curated by <a href="https://twitter.com/beaeutiful" target="_blank">@beAEutiful</a></p>
+			</div>
+			<img src="<?php bloginfo('template_url'); ?>/img/bg/bg-whiteJacket.jpg" alt="" />
+		</div>
 	
 		<div class="page-nav span3">
 			<h2><a href="<?php bloginfo('home'); ?>">Blog</a></h2>

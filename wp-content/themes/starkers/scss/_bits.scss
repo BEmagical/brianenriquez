@@ -29,24 +29,6 @@ $brand-color: $pink;
 $brand-colorDark: darken($pink, 15%);  
 $brand-colorLight: lighten($pink, 10%); 
 
-.komen {
-	background-image: url('../starkers/img/logos/logo-komen.jpg');
-	width: 90px;
-	height: 101px;
-	position: fixed;
-	bottom: 10px;
-	right: 10px;
-}
-
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-	.komen {
-		background-image: url('../starkers/img/logos/logo-komen@2x.jpg');
-		background-size: 100%;
-	}	
-}
-
 // ------------------------------------------------------ MEDIA QUERIES
 
 @mixin breakpoint($point) {
