@@ -106,12 +106,13 @@ body {
 
 .footer {
 	position: relative;
-	border-top: 1px solid $lightestGrey;
+	border-top: 1px solid $lighterGrey;
+	background: $lightestGrey;
 	margin-top: 20px;
+	padding: 20px 20px 30px 110px;
 }
 
 .page-main.span6 {
-	margin: 0;
 	
 	@include breakpoint(baby-bear) { 
 		width: 100%;

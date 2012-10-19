@@ -19,7 +19,7 @@
 	
 		<div class="page-nav span3">
 			<h2><a href="<?php bloginfo('home'); ?>">Inside</a></h2>
-			<p>“I always wanted a Mustang to rebuild its engine piece by piece. I never got one, which is why I code from scratch.”</p>
+			<p>A curation of articles collated to keep new web design students privy to how the best of the web is built.</p>
 			<ul><?php wp_list_categories('title_li='); ?></ul>
 		</div>
 		
@@ -36,6 +36,23 @@
 				<?php comments_template( '', true ); ?>
 			</article>
 			<?php endwhile; ?>
+			
+			<section class="related-posts row-fluid">			
+				<?php
+				global $post;
+				$args = array( 'numberposts' => 2 );
+				$myposts = get_posts( $args );
+				foreach( $myposts as $post ) :	setup_postdata($post); ?>
+					<div class="span6">
+						<article>
+							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+							<p><?php the_advanced_excerpt("length=20&use_words=1"); ?>
+							<a href="<?php the_permalink(); ?>"><span class="read-more">Read More &rarr;</span></a>
+							</p>
+						</article>
+					</div>
+				<?php endforeach; ?>
+			</section>
 		</div>	
 
 	<?php get_sidebar(); ?>

@@ -105,3 +105,8 @@ function mytheme_comments_form_defaults($default) {
 unset($default['comment_notes_after']);
 return $default;
 }
+
+/**
+ * Limit number of characters in related-post section
+ *
+*/

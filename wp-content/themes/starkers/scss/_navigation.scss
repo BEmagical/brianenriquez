@@ -133,7 +133,7 @@ nav {
 .page-nav.span3 {
 	position: relative;
 	padding-bottom: 10px;
-	margin-right: 40px;
+	margin-left: 0;
 	border-bottom: 1px dotted $lighterGrey;
 	
 	@include breakpoint(baby-bear) { 
