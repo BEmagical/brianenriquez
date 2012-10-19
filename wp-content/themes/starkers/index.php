@@ -18,7 +18,7 @@
 		</div>
 	
 		<div class="page-nav span3">
-			<h2><a href="<?php bloginfo('home'); ?>">Blog</a></h2>
+			<h2><a href="<?php bloginfo('home'); ?>">Inside</a></h2>
 			<p>“I always wanted a Mustang to rebuild its engine piece by piece. I never got one, which is why I code from scratch.”</p>
 			<ul><?php wp_list_categories('title_li='); ?></ul>
 		</div>

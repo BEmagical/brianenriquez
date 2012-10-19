@@ -71,11 +71,11 @@ article {
 	
 	h2, h2 a {
 		font-family: $brand-serif;
-		font-weight: 800;
-		color: $brand-colorDark; 
+		font-weight: normal;
+		color: $brand-color; 
 		
 		&:hover {
-			color: $brand-color;
+			color: $brand-colorDark;
 			background-color: transparent;
 		}
 	}
