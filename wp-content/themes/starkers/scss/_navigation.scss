@@ -12,9 +12,11 @@ nav {
 	border-right: 1px solid $brand-colorDark;
 	box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
 	-webkit-transition: $transition-switch;
+	-moz-transition: $transition-switch;
+	transition: $transition-switch;
 	
 	@include breakpoint(baby-bear) { 
-		width: 200px;
+		width: 240px;
 	}
 	
 	&.narrow {
@@ -44,7 +46,6 @@ nav {
 		-webkit-transition: $transition-fast;
 		
 		@include breakpoint(baby-bear) {
-			width: 200px;
 			padding: 8px 10px 8px 5px;
 			font-family: $brand-sans;
 			font-size: 16px;
@@ -77,11 +78,15 @@ nav {
 		
 		i {color: #fff;}
 	}
-	.icon-plus {-webkit-transition: $transition-fast;}
+	.icon-plus {
+		-webkit-transition: $transition-fast;
+		-moz-transition: $transition-fast;
+		transition: $transition-fast;
+	}
 	.icon-plus.switch {
 		-webkit-transform: rotate(45deg);
-		position: relative;
-		left: 2px;
+		-moz-transform: rotate(45deg);
+		transform: rotate(45deg);
 	}
 	
 	& .about-me {
@@ -104,7 +109,6 @@ nav {
 		}
 		
 		@include breakpoint(baby-bear) {
-			width: 200px;
 			bottom: 5px;
 		}
 		

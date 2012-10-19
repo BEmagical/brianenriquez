@@ -37,13 +37,15 @@ body {
 	padding: 40px 40px 40px 110px;
 	position: relative;
 	-webkit-transition: $transition-switch;
+	-moz-transition: $transition-switch;
+	transition: $transition-switch;
 	
 	@include breakpoint(baby-bear) { 
 		padding: 10px 20px 10px 45px;
 	}
 	
 	@include breakpoint(iphone-bear) {
-		max-width: 290px;
+		max-width: 320px;
 	}
 		
 	&.expanded {
