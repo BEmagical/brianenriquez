@@ -38,21 +38,8 @@
 			</article>
 			<?php endwhile; ?>
 			
-			<section class="related-posts row-fluid">			
-				<?php
-				global $post;
-				$args = array( 'numberposts' => 2 );
-				$myposts = get_posts( $args );
-				foreach( $myposts as $post ) :	setup_postdata($post); ?>
-					<div class="span6">
-						<article>
-							<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-							<p><?php the_advanced_excerpt("length=20&use_words=1"); ?>
-							<a href="<?php the_permalink(); ?>"><span class="read-more">Read More &rarr;</span></a>
-							</p>
-						</article>
-					</div>
-				<?php endforeach; ?>
+			<section class="related-posts row-fluid">	
+				<?php wp_related_posts()?>
 			</section>
 		</div>	
 
