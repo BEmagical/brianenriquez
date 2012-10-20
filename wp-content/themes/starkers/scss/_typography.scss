@@ -248,17 +248,30 @@ ul.related_post {
 			line-height: 20px;
 			text-shadow: $text-shadow;
 			
-			&:hover {background: darken($brand-colorDark, 10%)};
+			&:hover {
+				background: darken($brand-colorDark, 10%);
+				border-bottom: 1px solid $brand-colorDark;
+			}
+			
+			&.read-more {
+				margin: 0;
+				padding: 0;
+				display: inline;
+				font-family: $brand-sans;
+				font-size: 12px;
+				line-height: 12px;
+				text-transform: uppercase;
+				letter-spacing: 2px;
+				border: 0;
+			}
 		}
 		
 		> br {display: none;}
 		
-		& small {
-			display: block;
+		& p {
 			color: $lightestGrey;
 			font-size: 12px;
 			line-height: 14px;
-			padding-bottom: 10px;
 		}
 	}
 }
