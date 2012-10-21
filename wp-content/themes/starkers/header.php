@@ -1,8 +1,6 @@
 <!DOCTYPE html>
 <html class="wf-loading" <?php language_attributes(); ?>>
 <head>
-	<title><?php bloginfo( 'name' ); ?><?php wp_title( '|' ); ?></title>
-	
 	<meta name="description" content="A curation of articles designed to keep new web design students privy to how and why the best of the web is built.">
 	<meta charset="<?php bloginfo( 'charset' ); ?>" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">

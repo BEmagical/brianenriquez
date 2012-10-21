@@ -58,7 +58,9 @@ body {
 }
 
 .page-bg {
-	margin: -40px -40px 40px -45px;
+	margin: -40px -40px 35px -45px;
+	background: #F0EFED;
+	line-height: 0;
 	
 	@include breakpoint(baby-bear) { 
 		margin: -10px -20px 10px -45px;
@@ -69,7 +71,6 @@ body {
 		max-width: 100%;
 		
 		@include breakpoint(baby-bear) {
-			opacity: 0.5;
 			position: relative;
 			left: -106px;
 		}
@@ -80,7 +81,10 @@ body {
 		z-index: 1;
 		padding: 40px 40px 40px 60px;
 		
-		> h3 {margin: 15px 0 10px 0;}
+		> h3 {
+			margin: 15px 0 10px 0;
+			color: $brand-colorDark;
+		}
 		> p {margin: 0 0 10px 0;}
 		
 		@include breakpoint(baby-bear) {
