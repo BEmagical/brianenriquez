@@ -111,7 +111,7 @@ function get_the_title( $id = 0 ) {
 			$protected_title_format = apply_filters('protected_title_format', __('Protected: %s'));
 			$title = sprintf($protected_title_format, $title);
 		} else if ( isset($post->post_status) && 'private' == $post->post_status ) {
-			$private_title_format = apply_filters('private_title_format', __('<span class="private">Private</span>%s'));
+			$private_title_format = apply_filters('private_title_format', __('Private: %s'));
 			$title = sprintf($private_title_format, $title);
 		}
 	}
