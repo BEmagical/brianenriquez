@@ -4,7 +4,7 @@
 
 // ------------------------------------------------------ COLOR PALETTE
 
-$brand-serif: "chaparral-pro";
+$brand-serif: "skolar";
 $brand-sans: "proxima-nova";
 
 $lightestGrey: #efefef;
@@ -97,6 +97,7 @@ $transition-fast: all 100ms linear;
 
 .fr {float: right;}
 .fl {float: left;}
+.cloak {display: none !important;}
 
 .row [class*="span"]:first-child {margin-left: 0;}
 

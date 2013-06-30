@@ -12,7 +12,7 @@
 			<div class="welcome span12">
 				<h3>Undress the Web</h3>
 				<p>A blog for web school dropouts</p>
-				<p>Curated by <a href="https://twitter.com/beaeutiful" target="_blank">@beAEutiful</a></p>
+				<p>Curated by <a href="https://twitter.com/beaeutiful" target="_blank"><i class="icon-twitter"></i> @beAEutiful</a></p>
 			</div>
 			<img src="<?php bloginfo('template_url'); ?>/img/bg/bg-whiteJacket.jpg" alt="" />
 		</div>
@@ -23,7 +23,7 @@
 			<ul><?php wp_list_categories('title_li='); ?></ul>
 		</div>
 		
-		<div class="page-main span6">
+		<div class="page-main span8">
 			<?php query_posts('showposts=1'); ?>
 			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 			<article>

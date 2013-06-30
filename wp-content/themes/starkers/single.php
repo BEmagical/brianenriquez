@@ -15,7 +15,7 @@
 			<ul><?php wp_list_categories('title_li='); ?></ul>
 		</div>
 		
-		<div class="page-main span6">
+		<div class="page-main span8">
 			<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 			<article>
 			

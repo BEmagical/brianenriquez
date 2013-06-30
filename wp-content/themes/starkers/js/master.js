@@ -10,7 +10,6 @@ $(document).ready(function() {
 		$('.icon-plus').toggleClass('switch');
 		return false;
 	});
-	
 	$('.page-nav ul').tinyNav();
      
 });

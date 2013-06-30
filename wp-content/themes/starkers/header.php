@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html class="wf-loading" <?php language_attributes(); ?>>
 <head>
-	<meta name="description" content="A curation of articles designed to keep new web design students privy to how and why the best of the web is built.">
-	<meta charset="<?php bloginfo( 'charset' ); ?>" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
 	
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
@@ -25,6 +22,8 @@
 	  })();
 	</script>
 	<?php wp_head(); ?>
+
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>
@@ -32,4 +31,3 @@
 
 <div class="wrapper">
 	<?php include('parts/nav.php')?>
-	<div class="komen"></div>

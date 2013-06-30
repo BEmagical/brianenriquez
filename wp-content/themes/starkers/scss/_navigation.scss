@@ -9,8 +9,6 @@ nav {
 	height: 100%;
 	background-color: $brand-color;
 	overflow: hidden;
-	border-right: 1px solid $brand-colorDark;
-	box-shadow: 5px 0px 10px rgba(0, 0, 0, 0.3);
 	-webkit-transition: $transition-switch;
 	-moz-transition: $transition-switch;
 	transition: $transition-switch;
@@ -22,12 +20,13 @@ nav {
 	&.narrow {
 		width: 65px;
 		box-shadow: none;
+
 		
 		@include breakpoint(baby-bear) {
 			width: 30px;
 		}
 		
-		& .about-me {display: none;}
+		& .about-me {opacity: 0;}
 	}
 	
 	h1 {
@@ -36,9 +35,11 @@ nav {
 	
 	a {
 		float: left;
+		position: relative;
 		width: 240px;
 		overflow: hidden;
-		color: $lightestGrey;
+		color: #fff;
+		opacity: 1;
 		font-weight: bold;
 		font-size: 18px;
 		padding: 15px;
@@ -55,12 +56,14 @@ nav {
 			letter-spacing: 2px;
 		}
 	}
-	a i {
+	a i[class^="icon-"], a i[class*=" icon-"] {
+		display: inline-block;
 		font-size: 32px;
 		width: 32px;
-		vertical-align: middle;
+		line-height: 14px;
 		position: relative;
-		margin-right: 13px;
+		margin-right: 15px;
+		text-align: center;
 		color: $brand-colorDark;
 		
 		-webkit-transition: $transition-fast;
@@ -93,14 +96,16 @@ nav {
 		bottom: 20px;
 		color: $lightestGrey;
 		padding: 0 20px;
-		font-size: 12px;
+		font-size: 11px;
+		line-height: 12px;
 		width: 240px;
+		opacity: 1;
+		-webkit-transition: $transition;
 		
 		& a {
 			padding: 0;
 			float: none;
-			font-size: 12px;
-			line-height: normal;
+			font-size: 11px;
 			border-bottom: 1px dotted;
 			font-weight: normal;
 			letter-spacing: 0;
@@ -126,6 +131,28 @@ nav {
 		}
 	}
 	
+}
+a.home {
+	padding: 0;
+	img {
+		vertical-align: middle;
+		border-radius: 50px;
+		padding: 10px;
+		margin-right: -3px;
+		-webkit-transition: $transition;
+		-moz-transition: $transition;
+		transition: $transition;
+	}
+}
+body.home nav.narrow a.home img {
+	border-radius: 0;
+	padding: 0;
+}
+body.contact a.contact,
+body.labs a.labs,
+body.portfolio a.portfolio {
+	background: #cd1a67;
+	i {color: #fff;}
 }
 
 //------------------------------------------------------- PAGE NAV
@@ -179,12 +206,10 @@ nav {
 		line-height: $line-height-nav;
 	}
 	> ul li a {
-		color: $lightGrey;
 		display: block;
 		position: relative;
-		
 		&:hover {
-			color: $brand-color;
+			color: $brand-colorDark;
 		}
 	} 
 	

@@ -14,7 +14,7 @@ Template Name: Default
 			<ul id="filters"><?php wp_list_categories('title_li='); ?></ul>
 		</div>
 	
-		<div class="page-main span6">
+		<div class="page-main span8">
 			<article class="post">
 				<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 					<h2><span class="headline"><a href="#"><?php the_title(); ?></a></span></h2>

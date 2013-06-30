@@ -67,13 +67,14 @@ p {
 	color: $lightGrey;
 }
 article {
-	margin-bottom: 60px;
-	
-	&:last-of-type {margin-bottom: 20px;}
+	padding-bottom: 60px;
+	&:last-of-type {padding-bottom: 0;}
 	
 	h2, h2 a {
 		font-family: $brand-serif;
 		font-weight: normal;
+		font-size: 54px;
+		line-height: 46px;
 		color: $brand-color; 
 		
 		&:hover {
@@ -86,7 +87,7 @@ article {
 		font-size: 20px;
 		font-weight: normal;
 		line-height: 24px;
-		color: $darkerGrey;
+		color: $darkestGrey;
 		
 		@include breakpoint(baby-bear) { 
 			font-size: 18px;
@@ -209,6 +210,28 @@ article {
 		&:hover {
 			color: $brand-colorDark;
 		}
+	}
+}
+.page-nav {
+	p {
+		color: #272727;
+		font-family: $brand-serif;
+		font-size: 14px;
+		line-height: 18px;
+	}
+}
+.hero-unit {
+	h1 {
+		font-size: 72px;
+		color: $brand-color;
+	}
+	h2 {
+		font-family: $brand-serif;
+		font-size: 36px;
+		font-weight: normal;
+		line-height: 44px;
+		color: $darkestGrey;
+		margin: 40px 0;
 	}
 }
 

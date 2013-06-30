@@ -15,6 +15,9 @@
 			<?php if ( is_category('css3') ) {
 				echo '<p>"Back in my day, the only transitions we had were glasses."</p>';
 				} 
+					if ( is_category('labs') ) {
+				echo '<p>"A fool, Mr, Edgeworth, is one who has never made an experiment."<br/>-- <strong>Erasmus Darwin</strong></p>';
+				}	
 					if ( is_category('iOS') ) {
 				echo '<p>"In 1989 I installed some RAM in my Apple IISE. It blew up in the kitchen. We\'ve come a long way since then."</p>';
 				}	
@@ -42,10 +45,10 @@
 			</ul>
 		</div>
 	
-		<div class="page-main span6">
+		<div class="page-main span8">
 			<?php while ( have_posts() ) : the_post(); ?>
 			<ul>
-				<li class="no-bull">
+				<li class="no-bull post-block">
 					<article>
 						<h2><span class="headline"><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>"><?php the_title(); ?></a></span></h2>
 						<div class="post-meta">
