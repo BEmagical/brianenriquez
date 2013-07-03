@@ -15,7 +15,7 @@
 	</div>
 	<div class="row-fluid" style="margin: -30px 0 20px;">
 		<ul class="header-caption">
-			<li class="caption-credits">Photo from <strong><em>Butch Cassidy and the Sundance Kid,</em></strong> 1977. Courtesy of Twentieth Century Fox</li>
+			<li class="caption-credits"><strong><em>Drive,</em></strong> 2011. Courtesy of Bold Films</li>
 		</ul>
 	</div>	
 
