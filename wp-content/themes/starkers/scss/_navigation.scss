@@ -14,16 +14,17 @@ nav {
 	transition: $transition-switch;
 	
 	@include breakpoint(baby-bear) { 
-		width: 240px;
+		width: 100%;
+		height: 40px;
 	}
 	
 	&.narrow {
 		width: 65px;
 		box-shadow: none;
 
-		
 		@include breakpoint(baby-bear) {
-			width: 30px;
+			width: 100%;
+			height: 40px;
 		}
 		
 		& .about-me {opacity: 0;}
@@ -38,7 +39,7 @@ nav {
 		position: relative;
 		width: 240px;
 		overflow: hidden;
-		color: #fff;
+		color: #000;
 		opacity: 1;
 		font-weight: bold;
 		font-size: 18px;
@@ -47,7 +48,8 @@ nav {
 		-webkit-transition: $transition-fast;
 		
 		@include breakpoint(baby-bear) {
-			padding: 8px 10px 8px 5px;
+			padding: 10px;
+			width: 40px;
 			font-family: $brand-sans;
 			font-size: 16px;
 			line-height: 24px;
@@ -58,26 +60,25 @@ nav {
 	}
 	a i[class^="icon-"], a i[class*=" icon-"] {
 		display: inline-block;
-		font-size: 32px;
-		width: 32px;
+		font-size: 30px;
+		width: 35px;
 		line-height: 14px;
 		position: relative;
 		margin-right: 15px;
 		text-align: center;
-		color: $brand-colorDark;
+		color: #000;
 		
 		-webkit-transition: $transition-fast;
 		
 		@include breakpoint(baby-bear) {
 			font-size: 18px;
-			width: 18px;
-			margin-right: 5px;
+			width: 20px;
+			margin: 0;
 		}
 	}
 	a:hover, a.active {
 		background-color: $brand-colorDark;
 		color: #fff;
-		
 		i {color: #fff;}
 	}
 	.icon-plus {
@@ -94,7 +95,8 @@ nav {
 	& .about-me {
 		position: absolute;
 		bottom: 20px;
-		color: $lightestGrey;
+		color: $brand-colorDark;
+		font-weight: bold;
 		padding: 0 20px;
 		font-size: 11px;
 		line-height: 12px;
@@ -126,32 +128,20 @@ nav {
 			strong {
 				font-weight: bold;
 				text-transform: uppercase;
-				color: #fff;
+				color: #000;
 			}
 		}
 	}
-	
 }
-a.home {
-	padding: 0;
-	img {
-		vertical-align: middle;
-		border-radius: 50px;
-		padding: 10px;
-		margin-right: -3px;
-		-webkit-transition: $transition;
-		-moz-transition: $transition;
-		transition: $transition;
-	}
-}
-body.home nav.narrow a.home img {
-	border-radius: 0;
-	padding: 0;
-}
-body.contact a.contact,
+
+body.home a.home,
+body.identity a.identity,
 body.labs a.labs,
-body.portfolio a.portfolio {
-	background: #cd1a67;
+body.design a.design,
+body.portfolio a.portfolio,
+body.contact a.contact {
+	color: #fff;
+	background-color: #000;
 	i {color: #fff;}
 }
 

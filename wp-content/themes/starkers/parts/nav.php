@@ -1,13 +1,10 @@
 <nav class="narrow">
-	<a class="switch"><i class="icon-plus"></i> Collapse</a>
-	<a class="home blog" href="/home">
-		<img src="http://www.gravatar.com/avatar/d2146e28900c51c4720653ad86b39526.png" width="65" alt="Brian Enriquez" /> Brian Enriquez</a>
-	<a class="html cloak" href="#"><i class="icon-html5"></i> HTML5</a>
-	<a class="css3 cloak" href="#"><i class="icon-css3"></i> CSS3</a>
-	<a class="javascript cloak" href="#"><i class="icon-magic"></i> Javascript</a>
-	<a class="labs" href="/labs"><i class="icon-beaker"></i> Labs</a>
-	<a class="web-design" href="#"><i class="icon-crop"></i> Design</a>
+	<a class="home blog" href="/home"><i class="icon-home"></i> Home</a>
+	<a class="identity" href="/identity"><i class="icon-compass"></i> Identity</a>
 	<a class="portfolio" href="/portfolio"><i class="icon-camera-retro"></i> Portfolio</a>
+	<a class="code" href="#"><i class="icon-code"></i> Code</a>
+	<a class="labs" href="/labs"><i class="icon-beaker"></i> Lab</a>
+	<a class="design" href="/design"><i class="icon-desktop"></i> Design</a>
 	<a class="contact" href="/contact"><i class="icon-comments"></i> Contact</a>
 	
 	<div class="clearfix"></div>

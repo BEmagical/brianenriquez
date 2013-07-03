@@ -10,7 +10,7 @@ Template Name: Portfolio
 	<div class="page-content row-fluid">
 	
 		<div class="page-nav span3">
-			<h2><a href="<?php bloginfo('home'); ?>">Portfolio</a></h2>
+			<h2>Portfolio</h2>
 			<p>“He was some kind of a man. What does it matter what you say about people?”</p>
 			<p><strong>-- Tanya</strong>, <em>Touch of Evil</em>, 1958</p>
 		</div>

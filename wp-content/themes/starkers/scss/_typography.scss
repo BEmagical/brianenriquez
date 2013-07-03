@@ -43,7 +43,6 @@ h2 {
 		line-height: 26px;
 	}
 }
-
 h3 {
 	font-family: $brand-sans;
 	font-size: 16px;
@@ -66,6 +65,9 @@ p {
 	font-size: 12px;
 	color: $lightGrey;
 }
+a {
+	color: $brand-color;
+}
 article {
 	padding-bottom: 60px;
 	&:last-of-type {padding-bottom: 0;}
@@ -75,11 +77,13 @@ article {
 		font-weight: normal;
 		font-size: 54px;
 		line-height: 46px;
-		color: $brand-color; 
+		color: $brand-colorDark;
+		background-color: $brand-color;
+		display: inline; 
 		
 		&:hover {
 			color: $brand-colorDark;
-			background-color: transparent;
+			background-color: $brand-colorLight !important;
 		}
 	}
 	p:first-of-type {
@@ -94,14 +98,9 @@ article {
 			line-height: 22px;
 		}
 	}
-	> p a:hover {
-		background-color: $brand-colorDark;
-		color: #fff;
-	}
-	h2 a:hover {border: 0;}
 	
 	& strong {
-		color: $darkerGrey;
+		color: $brand-colorDark;
 	}
 	
 	& .post-meta {
@@ -156,7 +155,7 @@ article {
 	}
 	
 	> ul, ol {
-		margin-left: 40px;
+		margin: 10px 0 10px 20px;
 		
 		@include breakpoint(baby-bear) {
 			margin-left: 20px;
@@ -165,7 +164,7 @@ article {
 	> ul li, ol li {
 		list-style-type: disc;
 		line-height: $line-height-papa-bear;
-		margin: 20px 0;
+		margin: 0;
 		
 		@include breakpoint(baby-bear) {
 			line-height: $line-height-baby-bear;
@@ -214,8 +213,6 @@ article {
 }
 .page-nav {
 	p {
-		color: #272727;
-		font-family: $brand-serif;
 		font-size: 14px;
 		line-height: 18px;
 	}

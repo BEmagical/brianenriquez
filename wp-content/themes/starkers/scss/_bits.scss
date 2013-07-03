@@ -19,6 +19,10 @@ $blue: #0088cc;
 $orange: #E53B2C; 
 $pink: #e84c8f;
 
+$yellow: #ECBB27;
+$lightYellow: lighten($yellow, 10%);
+$darkYellow: darken($yellow, 10%);
+
 $brand-color: $blue;
 $brand-colorDark: darken($blue, 10%);  
 $brand-colorLight: lighten($blue, 10%);  
@@ -28,6 +32,12 @@ $brand-colorLight: lighten($blue, 10%);
 $brand-color: $pink;
 $brand-colorDark: darken($pink, 15%);  
 $brand-colorLight: lighten($pink, 10%); 
+
+// ------------------------------------------------------ BREAKING BAD THEME
+
+$brand-color: $yellow;
+$brand-colorDark: #000;  
+$brand-colorLight: $lightYellow; 
 
 // ------------------------------------------------------ MEDIA QUERIES
 

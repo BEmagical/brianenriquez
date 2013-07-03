@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Contact
+Template Name: Design
 */
 ?>
 
@@ -9,23 +9,20 @@ Template Name: Contact
 <div class="page-wrap">
 	<div class="page-content row-fluid">
 	
-		<div class="span3">
-			<ul class="header-caption">
-				<li class="caption-title">Frequencies</li>
-				<li class="caption">"Dad, do you think there's people on other planets?"</li>
-				<li>"I don't know, Sparks. But I guess I'd say if it is just us... seems like an awful waste of space."</li>
-				<li class="caption-credits">-- <strong>Contact</strong>, 1997</li>
-			</ul>
+		<div class="page-nav span3">
+			<h2>Design</h2>
+			<p>"As consumers we are incredibly discerning, we sense where has been great care in the design, and when there is cynicism and greed."</p>
+			<p><strong>-- Jonathan Ive</strong></p>
 		</div>
 		
 		<div class="page-main span8">
 			<?php if ( have_posts() ): ?>
-			<?php query_posts('cat=24'); ?>
+			<?php query_posts('cat=23'); ?>
 			<ol class="masonry">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<li class="post-block">
 					<article>
-						<h2><?php the_title(); ?></h2>
+						<h2><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?> &rarr;</a></h2>
 						<?php the_content('<span class="read-more"></span>'); ?>	
 					</article>
 				</li>

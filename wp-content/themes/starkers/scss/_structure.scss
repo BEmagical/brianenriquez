@@ -1,47 +1,148 @@
-.wrapper {
-	z-index: 1;
+html, body {
+	height: 100%;
 }
-body.home:after {
-	content: '\F187';
-	font-family: FontAwesome;
-	position: fixed;
-	z-index: 0;
-	top: 300px;
-	right: -100px;
-	font-size: 930px;
-	color: whiteSmoke;
-	-webkit-transform: rotate(-45deg);
+.page-wrap {
+	position: relative;
+	height: 100%;
 }
-body.labs:after {
-	content: '\F0C3';
-	font-family: FontAwesome;
-	position: fixed;
-	z-index: 0;
-	top: 300px;
-	right: -100px;
-	font-size: 930px;
-	color: whiteSmoke;
-	-webkit-transform: rotate(-45deg);
+.page-bg {
+	margin: -40px -40px 35px -45px;
+	background: #F0EFED;
+	line-height: 0;
+	position: relative;
+	
+	@include breakpoint(baby-bear) { 
+		margin: -10px -20px 10px -45px;
+	}
+	
+	img {
+		width: 100%;
+		max-width: 100%;
+		
+		@include breakpoint(baby-bear) {
+			position: relative;
+			left: -106px;
+		}
+	}
+	
+	& .welcome {
+		position: absolute;
+		z-index: 1;
+		padding: 40px 40px 40px 60px;
+		
+		> h3 {
+			margin: 15px 0 10px 0;
+			color: $brand-colorDark;
+		}
+		> p {margin: 0 0 10px 0;}
+		
+		@include breakpoint(baby-bear) {
+			text-align: right;
+			top: -20px;
+			right: -20px;
+		}
+	}
+	&.labs {
+		background-image: url('./img/bg/breakingBad-bg.png');
+		height: 400px;
+		background-repeat: no-repeat;
+		background-position: -100px -60px;
+	}
+	&.identity {
+		background-image: url('./img/bg/outlawJoseyWales-bg.png');
+		height: 400px;
+		background-repeat: no-repeat;
+	}
+	&.home {
+		background-image: url('./img/bg/butchAndSundance-bg.png');
+		height: 520px;
+		background-repeat: no-repeat;
+		background-position: -270px -100px;
+	}
 }
-body.portfolio:after {
-	content: '\F083';
-	font-family: FontAwesome;
-	position: fixed;
-	z-index: 0;
-	top: 300px;
-	right: -100px;
-	font-size: 930px;
-	color: whiteSmoke;
-	-webkit-transform: rotate(-45deg);
+.post-block {
+	margin-bottom: 100px;
+	&:last-of-type {margin-bottom: 0;}
 }
-body.contact:after {
-	content: '\F086';
-	font-family: FontAwesome;
-	position: fixed;
-	z-index: 0;
-	top: 300px;
-	right: -100px;
-	font-size: 930px;
-	color: whiteSmoke;
-	-webkit-transform: rotate(-45deg);
+.masonry {
+	.post-block {
+		float: left;
+		width: 50%;
+		box-sizing: border-box;
+		padding: 15px 20px;
+		margin-bottom: 0;
+		&:nth-child(3n) {
+			clear: both;
+		}
+	}
+	article h2, article h2 a {
+		font-size: 20px;
+		line-height: 1;
+		font-weight: bold;
+		font-style: italic;
+		margin-bottom: 10px;
+	}
+	.post-meta {
+		border: 0;
+		padding: 0;
+		font-size: 14px;
+	}
+	article p:first-of-type {
+		font-size: 18px;
+		line-height: 22px;
+	}
+	p {
+		margin: 10px 0;
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.read-more {
+		margin: 0;
+		padding: 0;
+		font-size: 18px;
+		line-height: 0;
+	}
+}
+
+.header-block {
+	position: absolute;
+	bottom: 30px;
+	left: 40px;
+	h1 {
+		display: inline-block;
+		padding: 0 20px;
+		font-size: 62px;
+		line-height: normal;
+		color: #000;
+		background-color: $brand-color;
+		margin: 0;
+		&.medium {font-size: 42px;}
+	}
+	p {
+		font-family: $brand-serif;
+		margin: 10px 0;
+		display: inline-block;
+		float: left;
+		padding: 10px 20px;
+		line-height: normal;
+		color: #000;
+		background-color: $brand-color;
+
+	}
+}
+.header-caption {
+	font-size: 12px;
+	strong {color: $brand-colorDark;}
+	li {
+		line-height: 16px;
+		padding: 5px 0;
+	}
+	.caption-title {
+		font-weight: bold;
+		color: $brand-colorDark;
+	}
+	.caption-credits {
+		font-family: skolar;
+		font-style: italic;
+	}
 }

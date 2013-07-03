@@ -7,23 +7,41 @@ Template Name: Labs
 <?php get_header(); ?>
 
 <div class="page-wrap">
+	<div class="page-bg labs">
+		<div class="header-block">
+			<h1>The Lab</h1>
+			<p class="subhead">Experimental code I toy with when the wife and baby are asleep.</p>
+		</div>
+	</div>
+		
 	<div class="page-content row-fluid">
-	
-		<div class="page-nav span3">
-			<h2><a href="<?php bloginfo('home'); ?>">Labs</a></h2>
-			<p>"A scientist in his laboratory is not a mere technician: he is also a child confronting natural phenomena that impress him as though they were fairy tales."</p>
-			<p><strong>-- Marie Curie</strong></p>
-			<ul>
-				<li><a href="http://linkedin.com/in/brianenriquez"> WP Audio Player</a></li>
-				<li><a href="http://linkedin.com/in/brianenriquez"> Event Calendar</a></li>
+		<div class="span3">
+			<ul class="header-caption">
+				<li class="caption-title">Figure A. Breaking Bad</li>
+				<li class="caption">"No, you clearly don't know who you're talking to, so let me clue you in. I am not in danger, Skyler. I AM the danger! A guy opens his door and gets shot and you think that of me? No. I am the one who knocks!"</li>
+				<li><strong>-- Walter White</strong></li>
+				<li class="caption-credits">Photo courtesty of <strong>AMC</strong>, the network that also airs <strong>The Killing</strong>
+				 which contains another favorite character of mine, the vegan gangster cop, Detective William Holder.</li>
 			</ul>
 		</div>
 		
 		<div class="page-main span8">
-			<div class="hero-unit">
-				<h2>As if the waters could not part any further, nor the hair part either, part 3 emerges. And the mermaids sing and the banjoman brings, the wildest of aromatic flowers.</h2>
-				<h2>For who could resist when a woman's amidst, remiss, with delicious cuts of Whole Foods, panko-crumb-breaded flounder.<h2>
-			</div>	
+			<?php if ( have_posts() ): ?>
+			<?php global $more; $more = 0; ?>
+			<?php query_posts('cat=18'); ?>
+			<ol class="masonry">
+			<?php while ( have_posts() ) : the_post(); ?>
+				<li class="post-block">
+					<article>
+						<h2><a href="<?php esc_url( the_permalink() ); ?>" title="Permalink to <?php the_title(); ?>" rel="bookmark"><?php the_title(); ?> &rarr;</a></h2>
+						<?php the_content('<span class="read-more"></span>'); ?>
+					</article>
+				</li>
+			<?php endwhile; ?>
+			</ol>
+			<?php else: ?>
+				<p>Zip. Zilch. Zero. Nada.</p>
+			<?php endif; ?>
 		</div>	
 
 	<?php get_sidebar(); ?>
