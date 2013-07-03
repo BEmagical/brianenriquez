@@ -1,11 +1,11 @@
 <nav class="narrow">
+	<img src="http://www.gravatar.com/avatar/d2146e28900c51c4720653ad86b39526.png" alt="" />
 	<a class="home blog" href="/home"><i class="icon-home"></i> Home</a>
-	<a class="identity" href="/identity"><i class="icon-compass"></i> Identity</a>
-	<a class="portfolio" href="/portfolio"><i class="icon-camera-retro"></i> Portfolio</a>
-	<a class="code" href="#"><i class="icon-code"></i> Code</a>
 	<a class="labs" href="/labs"><i class="icon-beaker"></i> Lab</a>
-	<a class="design" href="/design"><i class="icon-desktop"></i> Design</a>
-	<a class="contact" href="/contact"><i class="icon-comments"></i> Contact</a>
+	<a class="design" href="/design"><i class="icon-leaf"></i> Design</a>
+	<a class="identity cloak" href="/identity"><i class="icon-compass"></i> Identity</a>
+	<a class="portfolio" href="/portfolio"><i class="icon-camera-retro"></i> Portfolio</a>
+	<a class="contact" href="/contact"><i class="icon-compass"></i> Contact Me</a>
 	
 	<div class="clearfix"></div>
 	<div class="about-me">

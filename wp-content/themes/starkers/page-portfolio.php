@@ -9,8 +9,8 @@ Template Name: Portfolio
 <div class="page-wrap">
 	<div class="page-bg portfolio">
 			<div class="header-block">
-				<h1 class="medium">Portfolio</h1>
-				<p class="subhead">A quick drive through of my work. Animal style.</p>
+				<h1>Portfolio</h1>
+				<p class="subhead">A quick drive-thru of my work. Animal style.</p>
 			</div>
 		</div>
 	<div class="page-content row-fluid">

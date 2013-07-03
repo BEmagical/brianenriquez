@@ -81,6 +81,14 @@ nav {
 		color: #fff;
 		i {color: #fff;}
 	}
+	img {
+		width: 65px;
+		height: 65px;
+		margin: 0;
+		padding: 0;
+		border: 0;
+		margin-bottom: -5px;
+	}
 	.icon-plus {
 		-webkit-transition: $transition-fast;
 		-moz-transition: $transition-fast;

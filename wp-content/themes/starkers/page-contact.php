@@ -18,7 +18,7 @@ Template Name: Contact
 			</ul>
 		</div>
 		
-		<div class="page-main span8">
+		<div class="page-main span9">
 			<?php if ( have_posts() ): ?>
 			<?php query_posts('cat=24'); ?>
 			<ol class="masonry">
