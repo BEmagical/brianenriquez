@@ -30,6 +30,15 @@ h1 {
     font-size: 48px;
     line-height: 48px;
     margin-bottom: 20px;
+
+    &.single-post-title {
+		font-size: 82px;
+		line-height: 82px;
+		margin-bottom: 40px;
+		color: #000;
+		font-style: italic;
+		font-weight: normal;
+    }
 }
 h2 {
 	font-family: $brand-serif;
@@ -88,10 +97,11 @@ article {
 	}
 	p:first-of-type {
 		font-family: $brand-serif;
-		font-size: 20px;
+		font-size: 26px;
 		font-weight: normal;
-		line-height: 24px;
+		line-height: 32px;
 		color: $darkestGrey;
+		margin-top: 0;
 		
 		@include breakpoint(baby-bear) { 
 			font-size: 18px;
@@ -104,7 +114,7 @@ article {
 	}
 	
 	& .post-meta {
-		font-family: $brand-sans;
+		font-family: $brand-serif;
 		font-size: 16px;
 		line-height: 20px;
 		border-top: 1px dotted $lighterGrey;
@@ -209,6 +219,17 @@ article {
 		&:hover {
 			color: $brand-colorDark;
 		}
+	}
+}
+.post-meta {
+	font-family: $brand-serif;
+	color: #000;
+	font-size: 16px;
+	li {
+		line-height: 10px;
+		padding: 10px 0;
+		border-bottom: 1px dotted $lightGrey;
+		&:first-of-type {border-top: 1px dotted $lightGrey;}
 	}
 }
 .page-nav {
