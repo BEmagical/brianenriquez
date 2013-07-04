@@ -9,7 +9,6 @@
 <div class="page-wrap">
 	<div class="page-bg home">
 		<p class="disclaimer"><strong><em>7/3/13</em></strong> -- Major renovations going on. Hold on to your butts.</p>
-
 		<div class="header-block">
 			<h1 class="medium">Designer/Developer Hybrid</h1>
 			<p class="subhead">Because I want to build more than just pretty pictures</p>
