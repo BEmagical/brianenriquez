@@ -14,11 +14,9 @@
 			<p class="subhead">Because I want to build more than just pretty pictures</p>
 		</div>
 	</div>
-	<div class="row-fluid" style="margin: -30px 0 20px;">
-		<ul class="header-caption">
-			<li class="caption-credits"><strong><em>Drive,</em></strong> 2011. A film seen a thousand times while coding. Courtesy of Bold Films.</li>
-		</ul>
-	</div>	
+	<ul class="header-caption row-fluid">
+		<li class="caption-credits"><strong><em>Drive,</em></strong> 2011. A film seen a thousand times while coding. Courtesy of Bold Films.</li>
+	</ul>
 
 	<div class="page-content row-fluid">
 		<div class="page-main">

@@ -28,7 +28,7 @@ Template Name: Labs
 		<div class="page-main span9">
 			<?php if ( have_posts() ): ?>
 			<?php global $more; $more = 0; ?>
-			<?php query_posts('cat=18'); ?>
+			<?php query_posts(array ('category_name' => 'labs')); ?>
 			<ol class="masonry">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<li class="post-block">
@@ -42,8 +42,6 @@ Template Name: Labs
 			<?php else: ?>
 				<p>Zip. Zilch. Zero. Nada.</p>
 			<?php endif; ?>
-		</div>	
-
-	<?php get_sidebar(); ?>
+		</div>
 
 <?php get_footer(); ?>

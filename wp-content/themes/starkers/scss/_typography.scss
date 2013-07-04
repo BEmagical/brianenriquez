@@ -76,6 +76,16 @@ p {
 }
 a {
 	color: $brand-color;
+	&:hover {
+		border:0;
+		text-decoration: none;
+	}
+}
+ul, ol {
+	margin-left: 0;
+	li {
+		list-style-type: none;
+	}
 }
 article {
 	padding-bottom: 60px;

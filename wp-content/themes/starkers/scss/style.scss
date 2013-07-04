@@ -12,13 +12,12 @@ Tags: minimal, blue, responsive, web app, typograhy
 */
 
 @import "compass/css3";
+@import "bootstrap.scss";
 @import "bits.scss";
-@import "normalize.scss";
-@import "prism.scss";
+@import "bootstrap-custom.scss";
+@import "navigation.scss";
 @import "structure.scss";
 @import "typography.scss";
-@import "grids.scss";
 @import "isotope.scss";
 @import "comments.scss";
 @import "page.scss";
-@import "navigation.scss";

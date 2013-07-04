@@ -15,7 +15,7 @@ nav {
 	
 	@include breakpoint(baby-bear) { 
 		width: 100%;
-		height: 40px;
+		height: 200px;
 	}
 	
 	&.narrow {
@@ -24,16 +24,40 @@ nav {
 
 		@include breakpoint(baby-bear) {
 			width: 100%;
+			min-height: 40px;
 			height: 40px;
+			&.expand {height: auto;}
 		}
 		
 		& .about-me {opacity: 0;}
 	}
 	
-	h1 {
-		padding: 0 15px;
+	h3 {
+		display: none;
+		font-family: $brand-sans;
+		color: #000;
+		margin: 0;
+		line-height: 40px;
+		padding: 0 10px;
+		@include breakpoint(baby-bear) {display: block;}
 	}
-	
+	.switch {
+		@include breakpoint(baby-bear) {
+			display: none;
+		}
+	}
+	.expand-menu {
+		display: none;
+		cursor: pointer;
+		@include breakpoint(baby-bear) {
+			display: inline-block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: auto;
+			line-height: 21px;
+		}
+	}
 	a {
 		float: left;
 		position: relative;
@@ -44,15 +68,14 @@ nav {
 		font-weight: bold;
 		font-size: 18px;
 		padding: 15px;
-		
 		-webkit-transition: $transition-fast;
 		
 		@include breakpoint(baby-bear) {
+			float: none;
+			display: block;
 			padding: 10px;
-			width: 40px;
-			font-family: $brand-sans;
+			width: 100%;
 			font-size: 16px;
-			line-height: 24px;
 			font-weight: bold;
 			text-transform: uppercase;
 			letter-spacing: 2px;
@@ -67,7 +90,6 @@ nav {
 		margin-right: 15px;
 		text-align: center;
 		color: #000;
-		
 		-webkit-transition: $transition-fast;
 		
 		@include breakpoint(baby-bear) {
@@ -111,6 +133,9 @@ nav {
 		width: 240px;
 		opacity: 1;
 		-webkit-transition: $transition;
+		@include breakpoint(baby-bear) {
+			display: none;
+		}
 		
 		& a {
 			padding: 0;

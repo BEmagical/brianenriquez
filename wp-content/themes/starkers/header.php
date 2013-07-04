@@ -7,12 +7,10 @@
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/img/favicon.ico"/>
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script src="<?php bloginfo('template_url'); ?>/js/master-ck.js"></script>
 		
 	<script>
 	  (function() {
-
-		// FADES
-		$('body').hide().delay(200).fadeIn(200);
 	
 	    var config = {
 	      kitId: 'gok3hwj',

@@ -27,7 +27,7 @@ Template Name: Design
 		
 		<div class="page-main span8">
 			<?php if ( have_posts() ): ?>
-			<?php query_posts('cat=23'); ?>
+			<?php query_posts(array ('category_name' => 'design')); ?>
 			<ol class="masonry">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<li class="post-block">

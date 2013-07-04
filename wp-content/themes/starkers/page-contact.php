@@ -18,21 +18,36 @@ Template Name: Contact
 		</div>
 		
 		<div class="page-main span9">
-			<?php if ( have_posts() ): ?>
-			<?php query_posts('cat=24'); ?>
 			<ol class="masonry">
-			<?php while ( have_posts() ) : the_post(); ?>
 				<li class="post-block">
 					<article>
-						<h2><?php the_title(); ?></h2>
-						<?php the_content('<span class="read-more"></span>'); ?>	
+						<h2>Gmail</h2>
+						<p><a href="mailto: brianpatrick.enriquez@gmail.com" target="_blank">brianpatrick.enriquez@gmail.com</a></p>
+						<p>Cupcake ipsum dolor sit amet cake wafer I love topping. Cupcake topping I love jelly. Ice cream dragée jujubes I love macaroon candy canes applicake pudding jelly beans. Fruitcake toffee tart lollipop.</p>
 					</article>
 				</li>
-			<?php endwhile; ?>
+				<li class="post-block">
+					<article>
+						<h2>LinkedIn</h2>
+						<p><a href="http://linkedin.com/in/brianenriquez" target="_blank">/in/brianenriquez</a></p>
+						<p>Cupcake ipsum dolor sit amet cake wafer I love topping. Cupcake topping I love jelly. Ice cream dragée jujubes I love macaroon candy canes applicake pudding jelly beans. Fruitcake toffee tart lollipop.</p>
+					</article>
+				</li>
+				<li class="post-block">
+					<article>
+						<h2>Twitter</h2>
+						<p><a href="http://twitter.com/beAEutiful" target="_blank">@beAEutiful</a></p>
+						<p>Cupcake ipsum dolor sit amet cake wafer I love topping. Cupcake topping I love jelly. Ice cream dragée jujubes I love macaroon candy canes applicake pudding jelly beans. Fruitcake toffee tart lollipop.</p>
+					</article>
+				</li>
+				<li class="post-block">
+					<article>
+						<h2>Pinterest</h2>
+						<p><a href="http://pinterest.com/totembear" target="_blank">/totembear</a></p>
+						<p>Cupcake ipsum dolor sit amet cake wafer I love topping. Cupcake topping I love jelly. Ice cream dragée jujubes I love macaroon candy canes applicake pudding jelly beans. Fruitcake toffee tart lollipop.</p>
+					</article>
+				</li>
 			</ol>
-			<?php else: ?>
-				<p>Zip. Zilch. Zero. Nada.</p>
-			<?php endif; ?>
 		</div>
 		
 <?php get_footer(); ?>
