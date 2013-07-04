@@ -11,7 +11,6 @@ Template Name: Contact
 	
 		<div class="span3">
 			<ul class="header-caption">
-				<li class="caption-title">Frequencies</li>
 				<li class="caption">"Dad, do you think there's people on other planets?"</li>
 				<li>"I don't know, Sparks. But I guess I'd say if it is just us... seems like an awful waste of space."</li>
 				<li class="caption-credits">-- <strong>Contact</strong>, 1997</li>
@@ -35,7 +34,5 @@ Template Name: Contact
 				<p>Zip. Zilch. Zero. Nada.</p>
 			<?php endif; ?>
 		</div>
-
-	<?php get_sidebar(); ?>
-
+		
 <?php get_footer(); ?>

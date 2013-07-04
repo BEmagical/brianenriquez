@@ -16,7 +16,6 @@ html, body {
 	}
 	
 	img {
-		width: 100%;
 		max-width: 100%;
 		
 		@include breakpoint(baby-bear) {
@@ -71,7 +70,10 @@ html, body {
 		background-repeat: no-repeat;
 	}
 }
-section {margin-bottom: 40px;}
+section {
+	margin-bottom: 40px;
+	&:last-of-type {margin-bottom: 0;}
+}
 .post-block {
 	margin-bottom: 100px;
 	&:last-of-type {margin-bottom: 0;}
@@ -85,6 +87,15 @@ section {margin-bottom: 40px;}
 		margin-bottom: 0;
 		&:nth-child(3n) {
 			clear: both;
+		}
+	}
+	&.col3 {
+		.post-block {
+			width: 25%;
+			padding-left: 0;
+			&:nth-child(3n) {
+				clear: none;
+			}
 		}
 	}
 	article h2, article h2 a {
@@ -121,6 +132,7 @@ section {margin-bottom: 40px;}
 	bottom: 30px;
 	left: 40px;
 	h1 {
+		position: relative;
 		display: inline-block;
 		padding: 0 20px;
 		font-size: 62px;
@@ -139,7 +151,6 @@ section {margin-bottom: 40px;}
 		line-height: normal;
 		color: #000;
 		background-color: $brand-color;
-
 	}
 }
 .header-caption {
@@ -157,6 +168,18 @@ section {margin-bottom: 40px;}
 		font-family: skolar;
 		font-style: italic;
 	}
+}
+.disclaimer {
+	position: absolute;
+	top: 30px;
+	left: 40px;
+	font-family: $brand-serif;
+	margin: 10px 0;
+	display: inline-block;
+	padding: 10px 20px;
+	line-height: normal;
+	color: #000;
+	background-color: $brand-color;
 }
 
 .media-block {

@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
 // FADES
-	$('body').hide().delay(300).fadeIn(300);
+	$('.page-wrap').hide().delay(200).fadeIn(200);
 
 // NAVIGATION
-	$('nav').hover(function() {
+	$('.switch').click(function() {
 		$('nav').toggleClass('narrow');
 		$('.page-wrap').toggleClass('expanded');
 		$('.icon-plus').toggleClass('switch');

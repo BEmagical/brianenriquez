@@ -1,15 +1,13 @@
 
 		</div><!--/.page-content-->
-	</div><!--/.page-wrap-->
-	
-	<!--
-	<div class="footer row-fluid">
-		<div class="span12">
-			<h3><a href="#">Undress the Web</a></h3>
-			<p>A blog for web school dropouts.</p>	
+
+		<div class="footer row-fluid">
+			<ul>
+				<li><img src="http://www.gravatar.com/avatar/d2146e28900c51c4720653ad86b39526.png" width="61" alt="Brian Enriquez" /></li>
+				<li>&copy; 2013 <strong><em>Brian Enriquez</em></strong></li>
+			</ul>	
 		</div>
-	</div>
-	-->
+	</div><!--/.page-wrap-->
 </div><!--/.wrapper-->
 
 <script src="<?php bloginfo('template_url'); ?>/js/master-ck.js"></script>
