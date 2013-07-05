@@ -124,7 +124,16 @@ article {
 			line-height: 24px;
 		}
 	}
-	
+	a {
+		font-family: $brand-serif;
+		color: #000;
+		background-color: $brand-color;
+		font-style: italic;
+		font-weight: bold;
+		&:hover {
+			background-color: $brand-colorLight;
+		}
+	}
 	& strong {
 		color: $brand-colorDark;
 	}
@@ -190,7 +199,7 @@ article {
 	> ul li, ol li {
 		list-style-type: disc;
 		line-height: $line-height-papa-bear;
-		margin: 0;
+		margin: 20px 0;
 		
 		@include breakpoint(baby-bear) {
 			line-height: $line-height-baby-bear;
