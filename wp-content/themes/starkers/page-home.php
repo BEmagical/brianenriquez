@@ -10,12 +10,13 @@
 	<div class="page-bg home">
 		<p class="disclaimer"><strong><em>7/3/13</em></strong> -- Major renovations going on. Hold on to your butts.</p>
 		<div class="header-block">
-			<h1>Hybrid <span>Designer + Developer</span></h1>
-			<p class="subhead">Because I want to build more than must pretty pictures.</p>
+			<h1>Hi.</h1>
+			<p class="subhead">I'm Brian Enriquez, a Designer + Developer Hybrid.<br />
+				I bend webs, like Magneto bends metals.</p>
 		</div>
 	</div>
 	<ul class="header-caption tight row-fluid">
-		<li class="caption-credits"><strong><em>Drive,</em></strong> 2011. A film seen a thousand times while coding. Courtesy of Bold Films.</li>
+		<li class="caption-credits"><strong><em>Michael Fassbender,</em></strong> aka Magneto.</li>
 	</ul>
 
 	<div class="page-content row-fluid">
@@ -24,25 +25,25 @@
 				<li class="post-block">
 					<article>
 						<h2><a href="/labs">The Lab &rarr;</a></h2>
-						<p>Experimental code I toy with when the wife and baby are asleep.</p>
+						<p>Experimental code I toy with when wife and baby are asleep. The Geekery. <i class="icon-beaker"></i></p>
 					</article>
 				</li>
 				<li class="post-block">
 					<article>
 						<h2><a href="/design">Design &rarr;</a></h2>
-						<p>If things were clean, I swear there'd be so more room for the really good stuff.</p>
+						<p>Notes to quotes, everything I'd otherwise pin to a corkboard. Wax philosophic. <i class="icon-pushpin"></i></p>
 					</article>
 				</li>
 				<li class="post-block">
 					<article>
 						<h2><a href="/portfolio">Portfolio &rarr;</a><a href="/contact"></h2>
-						<p>A quick drive-thru of my work. Animal style.</p>
+						<p>Grab a bite from a quick drive-thru tour of my work.<br />Animal style. <i class="icon-camera-retro"></i></p>
 					</article>
 				</li>
 				<li class="post-block">
 					<article>
 						<h2><a href="/contact">Contact Me &rarr;</a></h2>
-						<p>In the words of the Hip Hop youth, "Holla atcha boy."</p>
+						<p>Hybrids have hands in many honey pots. So as the youth say,<br />"Holla atcha boy." <i class="icon-comments"></i></p>
 					</article>
 				</li>
 			</ol>

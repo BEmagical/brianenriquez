@@ -171,14 +171,14 @@ article img {
 		background-repeat: no-repeat;
 	}
 	&.home {
-		background-image: url('./img/bg/drive-bg.png');
+		background-image: url('./img/bg/fassbender-bg.png');
 		height: 520px;
 		background-repeat: no-repeat;
-		background-position: -180px -220px;
+		background-position: -160px -240px;
 		@include breakpoint(baby-bear) {
 			height: 350px;
-			background-position: -420px -160px;
-			background-size: 300%;
+			background-position: -350px -130px;
+			background-size: 260%;
 		}
 	}
 	&.portfolio {
@@ -352,11 +352,12 @@ section {
 	}
 	p {
 		font-family: $brand-serif;
-		margin: 10px 0;
+		margin: 20px 0 0 0;
 		display: inline-block;
 		float: left;
 		padding: 10px 20px;
-		line-height: normal;
+		font-size: 18px;
+		line-height: 22px;
 		color: #000;
 		background-color: $brand-color;
 		&.subhead {
@@ -364,6 +365,7 @@ section {
 				padding: 10px;
 				font-size: 16px;
 				line-height: 18px;
+				margin: 20px 0 10px 0;
 			}
 		}
 	}
