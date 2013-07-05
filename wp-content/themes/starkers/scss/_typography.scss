@@ -38,6 +38,11 @@ h1 {
 		color: #000;
 		font-style: italic;
 		font-weight: normal;
+		@include breakpoint(baby-bear) {
+			font-size: 42px;
+			line-height: 42px;
+			margin-bottom: 10px;
+		}
     }
 }
 h2 {
@@ -77,6 +82,7 @@ p {
 a {
 	color: $brand-color;
 	&:hover {
+		color: $brand-colorDark;
 		border:0;
 		text-decoration: none;
 	}
@@ -114,8 +120,8 @@ article {
 		margin-top: 0;
 		
 		@include breakpoint(baby-bear) { 
-			font-size: 18px;
-			line-height: 22px;
+			font-size: 22px;
+			line-height: 24px;
 		}
 	}
 	

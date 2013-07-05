@@ -94,7 +94,10 @@ body {
 			}
 		}
 	}
-	img {border-radius: 50px;}
+	img {
+		margin-bottom: 10px;
+		border-radius: 50px;
+	}
 }
 
 .page-main.span6 {
@@ -183,11 +186,34 @@ article img {
 		height: 400px;
 		background-repeat: no-repeat;
 		background-position: -170px -240px;
+		@include breakpoint(baby-bear) {
+			background-position: -10px -20px;
+			background-size: 180%;
+		}
 	}
 	&.design {
-		background-image: url('./img/bg/outlawJoseyWales-bg.png');
-		height: 400px;
+		background-image: url('./img/bg/wallE-bg.png');
+		height: 500px;
 		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: 0 -230px;
+		@include breakpoint(baby-bear) {
+			height: 350px;
+			background-size: 290%;
+			background-position: -160px -140px;
+		}
+	}
+	&.contact {
+		background-image: url('./img/bg/kidCudi-bg.png');
+		height: 500px;
+		background-repeat: no-repeat;
+		background-size: 110%;
+		background-position: -60px 0;
+		@include breakpoint(baby-bear) {
+			height: 350px;
+			background-position: -200px 0;
+			background-size: 200%;
+		}
 	}
 }
 section {
@@ -228,6 +254,23 @@ section {
 				float: none;
 				padding: 0;
 				margin: 20px 0;
+			}
+		}
+	}
+	&.col4 {
+		margin: 20px 0;
+		.post-block {
+			width: 24%;
+			padding: 0;
+			padding-right: 30px;
+			display: inline-block;
+			vertical-align: text-top;
+			float: none;
+			@include breakpoint(baby-bear) {
+				width: 100%;
+				float: none;
+				padding: 0;
+				margin: 10px 0;
 			}
 		}
 	}
@@ -279,11 +322,32 @@ section {
 		color: #000;
 		background-color: $brand-color;
 		margin: 0;
-		&.medium {font-size: 42px;}
-		@include breakpoint(baby-bear) {
-			padding: 0 10px;
+		&.medium {
+			font-size: 42px;
+			@include breakpoint(baby-bear) {
+				padding: 10px;
+				font-size: 28px;
+				line-height: 32px;
+			}	
+		}
+		span {
 			font-size: 18px;
-			&.medium {font-size: 18px;}
+			display: block;
+			text-transform: uppercase;
+			font-family: $brand-sans;
+			line-height: 24px;
+			margin: -5px 0 10px;
+			letter-spacing: 2px;
+			@include breakpoint(baby-bear) {
+				margin: 5px 0 0 0;
+				font-size: 12px;
+				line-height: 12px;
+			}
+		}
+		@include breakpoint(baby-bear) {
+			padding: 10px;
+			font-size: 28px;
+			line-height: 32px;
 		}
 	}
 	p {
@@ -295,16 +359,23 @@ section {
 		line-height: normal;
 		color: #000;
 		background-color: $brand-color;
-		@include breakpoint(baby-bear) {
-			padding: 10px;
-			font-size: 12px;
-			line-height: 14px;
+		&.subhead {
+			@include breakpoint(baby-bear) {
+				padding: 10px;
+				font-size: 16px;
+				line-height: 18px;
+			}
 		}
 	}
 }
 .header-caption {
 	font-size: 12px;
+	margin: 0;
 	strong {color: $brand-colorDark;}
+	&.tight {
+		margin-top: -35px;
+		@include breakpoint(baby-bear) {margin: 0;}
+	}
 	li {
 		line-height: 16px;
 		padding: 5px 0;
@@ -335,6 +406,8 @@ section {
 .media-block {
 	margin-bottom: 20px;
 	figure {
+		margin: 0;
+	
 		.mask {
 			height: 200px;
 			overflow: hidden;
@@ -351,6 +424,9 @@ section {
 				width: 30px;
 				height: 30px;
 				line-height: 33px;
+			}
+			@include breakpoint(baby-bear) {
+				height: 150px;
 			}
 		}
 		img {

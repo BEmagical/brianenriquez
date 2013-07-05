@@ -70,44 +70,6 @@ Template Name: Portfolio
 						</div>	
 					</div>	
 				</div>
-				<div class="row-fluid">
-					<div class="span3">
-						<div class="media-block media-small">
-							<figure>
-								<div class="mask">
-									<img src="<?php bloginfo('template_url'); ?>/img/bg/sevenSamurai-bg.png" alt="" />
-								</div>
-							</figure>
-						</div>	
-					</div>
-					<div class="span3">
-						<div class="media-block media-small">
-							<figure>
-								<div class="mask">
-									<img src="<?php bloginfo('template_url'); ?>/img/bg/butchAndSundance-bg.png" alt="" />
-								</div>
-							</figure>
-						</div>	
-					</div>
-					<div class="span3">
-						<div class="media-block media-small">
-							<figure>
-								<div class="mask">
-									<img src="<?php bloginfo('template_url'); ?>/img/bg/sevenSamurai-bg.png" alt="" />
-								</div>
-							</figure>
-						</div>	
-					</div>
-					<div class="span3">
-						<div class="media-block media-small">
-							<figure>
-								<div class="mask">
-									<img src="<?php bloginfo('template_url'); ?>/img/bg/butchAndSundance-bg.png" alt="" />
-								</div>
-							</figure>
-						</div>	
-					</div>	
-				</div>	
 			</section>
 
 			<section>
@@ -154,45 +116,7 @@ Template Name: Portfolio
 								<figcaption><strong>Figure C. Breaking Bad</strong> Cupcake ipsum dolor. Sit amet pudding. Biscuit fruitcake marshmallow sweet roll cupcake carrot cake. Macaroon cake applicake jelly.</figcaption>
 							</figure>
 						</div>	
-					</div>	
-				</div>
-				<div class="row-fluid">
-					<div class="span3">
-						<div class="media-block media-small">
-							<figure>
-								<div class="mask">
-									<img src="<?php bloginfo('template_url'); ?>/img/bg/sevenSamurai-bg.png" alt="" />
-								</div>
-							</figure>
-						</div>	
 					</div>
-					<div class="span3">
-						<div class="media-block media-small">
-							<figure>
-								<div class="mask">
-									<img src="<?php bloginfo('template_url'); ?>/img/bg/butchAndSundance-bg.png" alt="" />
-								</div>
-							</figure>
-						</div>	
-					</div>
-					<div class="span3">
-						<div class="media-block media-small">
-							<figure>
-								<div class="mask">
-									<img src="<?php bloginfo('template_url'); ?>/img/bg/sevenSamurai-bg.png" alt="" />
-								</div>
-							</figure>
-						</div>	
-					</div>
-					<div class="span3">
-						<div class="media-block media-small">
-							<figure>
-								<div class="mask">
-									<img src="<?php bloginfo('template_url'); ?>/img/bg/butchAndSundance-bg.png" alt="" />
-								</div>
-							</figure>
-						</div>	
-					</div>	
 				</div>	
 			</section>
 		</div>	
