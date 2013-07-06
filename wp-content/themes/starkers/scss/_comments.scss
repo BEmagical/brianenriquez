@@ -67,6 +67,7 @@
 			right: 0;
 		}
 		p {
+			&:first-of-type {margin-top: 10px;}
 			@include breakpoint(baby-bear) {
 				margin: 10px 0;
 			}

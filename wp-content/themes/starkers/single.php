@@ -8,9 +8,13 @@
 
 <div class="page-wrap">
 	<?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
-		<h3 style="margin-top: 0;">The Lab</h3>
+		<h3 style="margin-top: 0;">The Lab
+			<div class="fr">
+				<?php next_post_link('%link', '<i class="icon-chevron-sign-left"></i>', TRUE); ?> 
+				<?php previous_post_link('%link', '<i class="icon-chevron-sign-right"></i>', TRUE); ?> 
+			</div>
+		</h3>
 		<h1 class="single-post-title"><?php the_title(); ?></h1>
-
 	<div class="page-content row-fluid">
 		<ul class="post-meta span3">	
 			<li><time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?></time></li>
