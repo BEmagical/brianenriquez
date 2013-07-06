@@ -143,7 +143,7 @@ article {
 		font-family: $brand-serif;
 		font-size: 16px;
 		line-height: 20px;
-		border-top: 1px dotted $lighterGrey;
+		border-top: 1px dotted $lightestGrey;
 		padding: 20px 0 10px;
 		
 		@include breakpoint(baby-bear) { 
@@ -249,8 +249,8 @@ article {
 	li {
 		line-height: 10px;
 		padding: 10px 0;
-		border-bottom: 1px dotted $lightGrey;
-		&:first-of-type {border-top: 1px dotted $lightGrey;}
+		border-bottom: 1px dotted $lighterGrey;
+		&:first-of-type {border-top: 1px dotted $lighterGrey;}
 	}
 }
 .page-nav {

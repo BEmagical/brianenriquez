@@ -42,7 +42,7 @@
 
 'fields' => apply_filters( 'comment_form_default_fields', array(
 
-'author' => '<p class="comment-form-author">' . '<label for="author">' . __( 'Name <span>*</span>' ) . '</label> ' . ( $req ? '' : '' ) .
+'author' => '<p class="comment-form-author"><span class="author-gravatar"></span>' . '<label for="author">' . __( 'Name <span>*</span>' ) . '</label> ' . ( $req ? '' : '' ) .
 
         '<input id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></p>',   
 
