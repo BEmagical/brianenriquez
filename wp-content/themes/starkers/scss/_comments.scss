@@ -5,7 +5,6 @@
 	position: relative;
 
 	h3 {
-		padding-left: 90px;
 		margin-bottom: 0;
 		@include breakpoint(baby-bear){
 			padding-left: 0;
@@ -21,9 +20,9 @@
 		position: absolute;
 		width: 50px;
 		height: 50px;
+		margin-left: -70px;
 		background-color: $brand-color;
 		border-radius: 50px;
-		left: -70px;
 		top: 24px;
 	}
 	& img.avatar {
@@ -31,7 +30,7 @@
 		display: inline-block;
 		width: 50px;
 		height: 50px;
-		margin: 0 20px;
+		margin-left: -70px;
 		border-radius: 100px;
 		float: left;
 		
@@ -49,7 +48,6 @@
 			font-size: 18px;
 			line-height: 24px;
 			display: block;
-			padding-left: 70px;
 			color: #000;
 			@include breakpoint(baby-bear) {
 				padding: 0;
@@ -101,4 +99,21 @@
 #respond .section-title {
 	display: block;
 	text-align: left;
+}
+
+.comment-reply-link {
+	margin-top: -10px;
+	position: relative;
+	font-weight: normal;
+	color: $brand-color;
+	display: table;
+	background-color: transparent;
+	border-top: 1px dotted;
+	&:hover {border-top: 1px dotted transparent;}
+}
+.children {
+	padding-left: 70px;
+	li {
+		position: relative;
+	}
 }

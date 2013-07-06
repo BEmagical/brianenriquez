@@ -6,7 +6,6 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 }
 
 form#commentform {
-	padding-left: 90px;
 	@include breakpoint(baby-bear) {padding: 0;}
 	& p {
 		padding-left: 0;

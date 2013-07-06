@@ -99,12 +99,12 @@
 				<h4><?php comment_author_link() ?></h4>
 				<time><?php comment_date() ?> at <?php comment_time() ?></time>
 				<?php comment_text() ?>
+				<?php comment_reply_link( array_merge( $args, array( 'depth' => $depth, 'max_depth' => $args['max_depth'] ) ) ); ?>
 			</article>
+		</li>	
 		<?php endif; ?>
-		</li>
 		<?php 
 	}
-	
 	
 function mytheme_init() {
 add_filter('comment_form_defaults','mytheme_comments_form_defaults');

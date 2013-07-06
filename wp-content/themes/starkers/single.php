@@ -12,7 +12,7 @@
 		<h1 class="single-post-title"><?php the_title(); ?></h1>
 
 	<div class="page-content row-fluid">
-		<ul class="post-meta span2">	
+		<ul class="post-meta span3">	
 			<li><time datetime="<?php the_time( 'Y-m-d' ); ?>" pubdate><?php the_date(); ?></time></li>
 			<li>Brian Enriquez</li>
 			<li><?php comments_popup_link('Leave a Comment', '1 Comment', '% Comments'); ?></li>
