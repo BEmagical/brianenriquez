@@ -99,6 +99,12 @@
 #respond .section-title {
 	display: block;
 	text-align: left;
+	h3 a {
+		text-transform: none;
+letter-spacing: 0;
+font-size: 18px;
+line-height: 24px;
+	}
 }
 
 .comment-reply-link {
@@ -116,4 +122,34 @@
 	li {
 		position: relative;
 	}
+}
+.authorcomment {
+	border-bottom: 1px solid $brand-color !important;
+	img.avatar {
+		-webkit-animation-name: pulse; 
+  		-webkit-animation-duration: 3s; 
+  		-webkit-animation-iteration-count: infinite; 	
+  	}	
+  	h4:after {
+  		content: 'author';
+		position: absolute;
+		margin-left: 10px;
+		text-transform: uppercase;
+		font-style: normal;
+		font-size: 11px;
+		font-family: $brand-sans;
+		color: $brand-color;
+  	}
+  	time {color: $brand-color !important;}
+}  	
+@-webkit-keyframes pulse {
+  from {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 1.0;
+  }
+  to { 
+    opacity: 0.25;
+  }
 }

@@ -8,6 +8,8 @@ select, textarea, input[type="text"], input[type="password"], input[type="dateti
 form#commentform {
 	@include breakpoint(baby-bear) {padding: 0;}
 	& p {
+		font-size: 18px;
+		line-height: 24px;
 		padding-left: 0;
 		position: relative;
 		margin: 10px 0;
