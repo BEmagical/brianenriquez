@@ -1,49 +1,44 @@
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+	border-radius: 0;
+	height: auto;
+	font-family: $brand-serif;
+	color: #000;
+}
+
 form#commentform {
+	padding-left: 90px;
+	@include breakpoint(baby-bear) {padding: 0;}
 	& p {
 		padding-left: 0;
 		position: relative;
+		margin: 10px 0;
 	}
 	label {
-		display: inline-block;
-		padding: 13px 15px;
-		border-right: 1px solid #DADADA;
-		z-index: 10;
-		position: absolute;
-		height: 46px;
-		top: 1px;
-		width: 100px;
-		text-align: right;
-		
-		@include breakpoint(baby-bear) {
-			display: block;
-			padding: 5px 0;
-			border: 0;
-			position: relative;
-			height: auto;
-			top: 0;
-			text-align: left;
-			
-			font-weight: bold;
-			text-transform: uppercase;
-			letter-spacing: 2px;
-		}
+		font-family: $brand-sans;
+		font-size: 16px;
+		line-height: 16px;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		color: $brand-color;
+		margin: 10px 0;
 	}
 	input, textarea {
 		width: 100%;
-		border: 1px solid $lighterGrey;
-		padding: 12px 15px 12px 125px;
+		font-size: 18px;
+		line-height: normal;
+		border: 1px solid #dadada;
+		padding: 10px;
 		outline: 0;
 		resize: none;
-		color: $darkGrey;
-		font-size: 16px;
-		line-height: 22px;
-		-webkit-transition: $transition;
-		
 		position: relative;
+		min-height: 30px;
+		border: 1px solid $lighterGrey;
+		margin: 0;
+		-webkit-transition: $transition;
 	
 		&:hover, &:focus {
-			border-color: $lightGrey;
-			border-bottom: 1px solid $darkGrey;
+			border-color: $darkGrey;
 			-webkit-box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
 		}	
 		
@@ -66,10 +61,10 @@ form#commentform {
 		}
 	}
 	p.comment-notes {
-		font-family: $brand-sans;
-		font-size: 14px;
-		line-height: 18px;
-		margin: 0;
+		font-family: $brand-serif;
+		font-size: 18px;
+		line-height: 24px;
+		margin: 0 0 20px;
 		text-align: left;
 		
 		@include breakpoint(baby-bear) {
@@ -80,23 +75,5 @@ form#commentform {
 		position: relative;
 		top: 11px;
 		left: 0;
-	}
-}
-form#commentform input, form#commentform textarea {
-	width: 100%;
-	border: 1px solid #dadada;
-	padding: 12px 15px 12px 125px;
-	outline: 0;
-	resize: none;
-	color: dimgrey;
-	font-size: 16px;
-	line-height: 22px;
-	-webkit-transition: all 200ms linear;
-	position: relative;
-	
-	@include breakpoint(baby-bear) {
-		padding: 20px 15px;
-		border-radius: 0;
-		margin: 0;
 	}
 }
