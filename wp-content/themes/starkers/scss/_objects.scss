@@ -1,0 +1,12 @@
+.audioplayer {
+	a, a:hover {background-color: transparent;}
+	.audioplayer-bar-played {
+		background: $brand-colorLight;
+		background: -webkit-gradient( linear, left top, right top, from( $brand-colorLight ), to( #ce3a00 ) );
+		background: -webkit-linear-gradient( left, $brand-colorLight, #ce3a00 );
+		background: -moz-linear-gradient( left, $brand-colorLight, #ce3a00 );
+		background: -ms-radial-gradient( left, $brand-colorLight, #ce3a00 );
+		background: -o-linear-gradient( left, $brand-colorLight, #ce3a00 );
+		background: linear-gradient( left, $brand-colorLight, #ce3a00 );
+	}
+}
