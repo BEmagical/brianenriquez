@@ -210,11 +210,6 @@ article {
 		& .title {
 			display: block;
 		}
-		
-		> a:hover {
-			color: #fff;
-			background-color: $brand-colorDark;
-		}
 	}
 	> ol li {
 		list-style-type: decimal;
