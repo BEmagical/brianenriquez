@@ -73,7 +73,7 @@
 	 */
 
 	function script_enqueuer() {
-		wp_register_style( 'screen', get_template_directory_uri().'/style.css', '', '', 'screen' );
+		wp_register_style( 'screen', get_template_directory_uri() . '/style.css', '', '', 'screen' );
         wp_enqueue_style( 'screen' );
 	}	
 

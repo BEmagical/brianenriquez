@@ -1,0 +1,17 @@
+/* =Custom
+----------------------------------------------- */
+
+body {
+	background: url('images/gray_jean.png');
+	background-repeat: repeat-x repeat-y;
+}
+
+#page {border-top-color: #f7c851;}
+.triggers a,
+.entry-format-badge {background-color: #f7c851;}
+
+img.no-grav.header-image {
+	border-radius: 100px;
+}
+
+#respond #commentform {background-color: transparent;}

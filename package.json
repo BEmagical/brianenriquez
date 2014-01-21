@@ -1,0 +1,14 @@
+{
+  "name": "brianenriquez",
+  "author": "Brian Enriquez",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BEmagical/brian-enriquez"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-rsync": "~0.2.1",
+    "grunt-contrib-compass": "~0.7.0",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}

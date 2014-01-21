@@ -1,0 +1,6 @@
+body {
+	background-image: ('images/gray_jean.png') repeat-x repeat-y;
+}
+img.no-grav.header-image {
+	border-radius: 100px;
+}

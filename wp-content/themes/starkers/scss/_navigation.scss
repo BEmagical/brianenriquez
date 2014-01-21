@@ -60,6 +60,7 @@ nav {
 	}
 	a {
 		float: left;
+		cursor: pointer;
 		position: relative;
 		width: 240px;
 		overflow: hidden;
@@ -84,8 +85,8 @@ nav {
 	a i[class^="icon-"], a i[class*=" icon-"] {
 		display: inline-block;
 		font-size: 30px;
+		vertical-align: middle;
 		width: 35px;
-		line-height: 14px;
 		position: relative;
 		margin-right: 15px;
 		text-align: center;
@@ -94,6 +95,7 @@ nav {
 		
 		@include breakpoint(baby-bear) {
 			font-size: 18px;
+			line-height: 18px;
 			width: 20px;
 			margin: 0;
 		}
