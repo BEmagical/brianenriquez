@@ -16,3 +16,5 @@ sitemap.xml.gz
 
 node_modules
 .sass-cache
+
+node_modules
